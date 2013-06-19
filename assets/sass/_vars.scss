@@ -50,7 +50,15 @@ $size_large_max: 1120px;
     }
 }
 
-
+/* Custom */
+@mixin cleanbutton {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+	border: none;
+	border-radius: 0;
+	border: solid 1px #ccc;
+}
 
 
 /* Utility */

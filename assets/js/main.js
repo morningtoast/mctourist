@@ -43,6 +43,8 @@ App.Main = (function($, Modernizr, App) {
 						$("#locations").append(Mustache.render(data.templates.location, v));	
 						data.coords[v.id] = v;
 					});
+					
+					//console.log(data.coords);
 				}
 			});		
 		
@@ -153,7 +155,7 @@ App.Main = (function($, Modernizr, App) {
 		},
 
 		viewDestination: function() {
-			$("#locations").on("click", "li span", function(e) {
+			$("#locations").on("click", "td .view", function(e) {
 				var dest = $(this).parent().parent().data();
 				dest.rz = (0 - dest.z);
 				data.destination = dest;
@@ -187,9 +189,9 @@ App.Main = (function($, Modernizr, App) {
 					//$("#readout").html(" "+dir+" for "+dist+" blocks. );
 					
 					local.displayReadout("To get to "+data.destination.name+" head ", dir, "It will take you "+timeToWalk+" walking.");
-					
+					window.scrollTo(0,0);
 				} else {
-					alert("need player");
+					alert("TBD");
 				}
 				
 			});

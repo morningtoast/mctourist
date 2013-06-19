@@ -22,39 +22,54 @@
 <body id="home" data-module="Main" data-uid="123abc">
 	<div id="layout">
 		<div id="header">
-			Minecraft Tourist
+			<h1>Minecraft Tourist</h1>
 		</div>
 		<div class="clear">
-			<div id="readout">
-				readout
-			</div>
+			<div id="currentpos">
+					<h4>Where are you located?</h4>
+					<input type="number" id="locatex" name="x" placeholder="X" size="5" />
+					<input type="number" id="locatez" name="z" placeholder="Z" size="5" />
+					<input type="button" id="submit_locateplayer" name="locate" value="Locate" />
+				</div>
+			<div id="readout" class="loading"><span class="icon"></span></div>
 			<div id="controls">
+				
 				<div id="newpin">
+					<h4>Add a new location</h4>
 					<form id="newlocation">
-						x <input type="text" name="newx" size="5" />
-						z <input type="text" name="newz" size="5" />
-						name <input type="text" name="name" size="5" />
-						<select name="style">
-							<option value="Mineshaft">Mineshaft</option>
-							<option value="Cave">Cave</option>
-							<option value="Village">Village</option>
-							<option value="Structure">Structure</option>
-						</select>
+						<div class="coords">
+							<input type="text" name="newx" id="newx" placeholder="X" size="5" />
+							<input type="text" name="newz" id="newz" placeholder="Y" size="5" />
+							<select id="landmark" name="style">
+								<option value="Cave">Cave</option>
+								<option value="Structure">Structure</option>
+								<option value="Mineshaft">Mineshaft</option>
+								<option value="Village">Village</option>
+								<option value="Portal">Portal</option>
+								<option value="Stronghold">Stronghold</option>
+								<option value="Temple">Temple</option>
+							</select>
+						</div>
+						<div class="desc">
+							<input type="text" name="name" placeholder="Location name (optional)" size="20" />
+						</div>
 						<input type="hidden" name="uid" value="123abc" />
-						<input type="submit" id="savenew" name="savenew" value="Save" />
+						<input type="submit" id="savenew" name="savenew" value="Save location" />
 					</form>
 				</div>
-				<div id="currentpos">
-						x <input type="text" id="locatex" name="x" size="5" />
-						z <input type="text" id="locatez" name="z" size="5" />
-						<input type="button" id="submit_locateplayer" name="locate" value="Locate" />
-				</div>
+				
 			
 			</div>
 		</div>
-		<div id="locations">
-		
-		</div>
+		<table id="locations">
+			<tr>
+				<th>&nbsp;</th>
+				<th>Location</th>
+				<th class="int">X</th>
+				<th class="int">Z</th>
+				<th>&nbsp;</th>
+			</tr>
+		</table>
 	</div>
 	<script type="text/js-template" id="tmpl-readout">
 		<div class="prefix">{{prefix}}</div>
@@ -62,12 +77,19 @@
 		<div class="suffix">{{suffix}}</div>
 	</script>
 	<script type="text/js-template" id="tmpl-list-row">
-		<ul data-id="{{id}}" data-x="{{x}}" data-y="{{y}}" data-z="{{z}}">
-			<li><span>{{name}}</span></li>
-			<li>{{style}}</li>
-			<li>x: {{x}}</li>
-			<li>z: {{z}}</li>
-		</ul>
+		<tr class="row" data-id="{{id}}" data-x="{{x}}" data-y="{{y}}" data-z="{{z}}" data-name="{{name}}">
+			<td><span class="mapit"></span></td>
+			<td class="desc">
+				<div class="view">
+					{{name}}
+					<small>{{style}}</small>
+				</div>
+				
+			</td>
+			<td class="int">{{x}}</td>
+			<td class="int">{{z}}</td>
+			<td><span class="delete"></span></td>
+		</tr>
 	</script>
 </body>
 </html>

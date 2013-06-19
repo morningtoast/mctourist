@@ -1,21 +1,162 @@
 @import '_vars.scss';
 
-#locations ul {
-	@include clear;
-	@include clean;
+#header {
+	background-color: #000;
+	color: #ccc;
+	font-size: 1rem;
+	font-weight: normal;
+	padding: 8px;
 	
-	li {
+	h1 {
 		@include clean;
-		float: left;
-		list-style: none;
-		padding-right:5px;
+		
+		
+		&:before {
+			@include icon($icon_map);
+			font-weight: normal;
+			padding-right: 10px;
+		}
 	}
 }
 
+#currentpos {
+	text-align: center;
+	padding: 10px;
+	
+	h4 {
+		padding-bottom: 6px;
+	}
+}
+
+
+#newpin {
+	text-align: center;
+	
+	h4 {
+		padding: 6px 0;
+	}
+}
+
+#locatex, #locatez {
+	@include cleanbutton;
+	border: solid 1px #ccc;
+	width: 80px;
+	height: 40px;
+	font-size: 2rem;
+	padding: 0 5px;
+}
+
+#submit_locateplayer {
+	@include cleanbutton;
+	background-color: #000;
+	color: #fff;
+	font-size: 2rem;
+	padding: 8px;
+	height: 40px;
+}
+
+#newlocation {
+	input, select { 
+		@include cleanbutton;
+		font-size: 2rem;
+		padding: 0 5px;
+	}
+	
+	.coords {
+		margin-bottom: 10px;
+	}
+	
+	#savenew {
+		width: 98%;
+		background-color: #036;
+		color: #fff;
+		text-align: center;
+		padding: 5px;
+		margin: 10px 0;
+		border: solid 1px #003;
+	}	
+}
+
+#newx, #newz {
+	width: 18%;
+	height: 40px;
+}
+
+#landmark, .desc input {
+	height: 40px;
+	font-size: 2rem;
+	width: 58%;
+}
+
+.desc input {
+	width: 98%;
+}
+
+
+
+#locations {
+	width: 98%;
+	
+	th {
+		text-align: left;
+		background-color: #036;
+		color: #fff;
+		font-size: 1.3rem;
+		padding: 3px;
+	}
+	
+	td {
+		padding: 8px 3px;
+		font-size: 2rem;
+		vertical-align: top;
+	}
+	
+	small {
+		display: block;
+		font-size: 1.5rem;
+		color: #999;
+	}
+	
+	.int { 
+		text-align: right;
+		width: 10%;
+	}
+	
+	.desc {
+		width: 80%;
+	}
+	
+	.row {
+		border-bottom: solid 1px #ccc;
+	}
+	
+	.mapit:before {
+		@include icon($icon_compass);
+		padding-top: 5px;
+		display: block;
+	}
+}
+
+#readout.loading {
+
+	.icon:before {
+		@include icon($icon_compass);
+		font-size: 8rem;
+		color: #333;
+	}	
+}
+
 #readout {
+	background:url(../../images/bedge_grunge.png);
+	min-height: 100px;
 	text-align: center;
 	font-family:"news cycle",arial,helvetica,sans-serif; 
 	font-size: 2.4rem;
+	padding: 10px 0;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	
+
 	
 	div.suffix {
 		font-size: 2rem;
