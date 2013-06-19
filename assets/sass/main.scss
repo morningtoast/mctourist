@@ -1,0 +1,30 @@
+@import '_vars.scss';
+
+#locations ul {
+	@include clear;
+	@include clean;
+	
+	li {
+		@include clean;
+		float: left;
+		list-style: none;
+		padding-right:5px;
+	}
+}
+
+#readout {
+	text-align: center;
+	font-family:"news cycle",arial,helvetica,sans-serif; 
+	font-size: 2.4rem;
+	
+	div.suffix {
+		font-size: 2rem;
+	}
+	
+	div.direction {
+		font-size:3.6rem;
+		font-weight:700;
+		text-transform:uppercase; 
+		line-height: .8em;
+	}
+}

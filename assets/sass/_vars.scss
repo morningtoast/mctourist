@@ -1,0 +1,88 @@
+/* Variables */
+
+
+
+
+/* Glyphs */
+$font_glyphs: 'icomoon';
+
+$icon_home: "\e002";
+$icon_compass: "\e0f9";
+$icon_pin: "\e0f7";
+$icon_arrowup: "\e3b4";
+$icon_arrowright: "\e3b5";
+$icon_arrowdown: "\e3b6";
+$icon_arrowleft: "\e3b7";
+$icon_share: "\e47b";
+$icon_check: "\e368";
+$icon_xmark: "\e366";
+$icon_map: "\e0fd";
+$icon_trash: "\e250";
+
+@mixin icon ($content) {
+	font-family: $font_glyphs;
+	content: $content;
+}
+
+
+
+/* Responsive */
+$size_small_max: 620px;
+$size_medium_max: 780px;
+$size_large_max: 1120px;
+
+
+@mixin size($size) {
+    @if $size == largeonly {
+        @media all and (min-width: $size_medium_max) and (max-width: $size_large_max) { @content; }
+    }
+	@else if $size == largeup {
+        @media all and (min-width: $size_medium_max) { @content; }
+    }
+    @else if $size == mediumup {
+        @media all and (min-width: $size_small_max) { @content; }
+    }
+    @else if $size == mediumonly {
+        @media all and (min-width: $size_small_max) and (max-width: $size_medium_max) { @content; }
+    }
+    @else if $size == smallonly {
+        @media all and (max-width: $size_small_max) { @content; }
+    }
+}
+
+
+
+
+/* Utility */
+
+@mixin clearhide {
+    display:block;
+    overflow:hidden;
+    width:100%;
+}
+
+
+@mixin clear {
+    &:after {
+       content: "";
+       display: table;
+       clear: both;                  
+    }
+}
+
+@mixin clean {
+	padding: 0;
+	margin: 0;
+}
+
+@mixin offsite {
+    position:absolute;
+    top:0;
+    left:-9999px;
+}
+
+@mixin onsite {
+    position: relative;
+    top: 0;
+    left: 0;
+}

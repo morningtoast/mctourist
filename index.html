@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Minecraft Tourist</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<!-- Dev pointers only; Change to compiled bundles for production -->
+	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="assets/js/lib/modernizr-2.6.2.min.js"></script>
+	<script src="assets/js/lib/mustache.js"></script>
+	<script src="assets/js/helpers.js"></script>
+	<script src="assets/js/global.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body id="home" data-module="Main" data-uid="123abc">
+	<div id="layout">
+		<div id="header">
+			Minecraft Tourist
+		</div>
+		<div class="clear">
+			<div id="readout">
+				readout
+			</div>
+			<div id="controls">
+				<div id="newpin">
+					<form id="newlocation">
+						x <input type="text" name="newx" size="5" />
+						z <input type="text" name="newz" size="5" />
+						name <input type="text" name="name" size="5" />
+						<select name="style">
+							<option value="Mineshaft">Mineshaft</option>
+							<option value="Cave">Cave</option>
+							<option value="Village">Village</option>
+							<option value="Structure">Structure</option>
+						</select>
+						<input type="hidden" name="uid" value="123abc" />
+						<input type="submit" id="savenew" name="savenew" value="Save" />
+					</form>
+				</div>
+				<div id="currentpos">
+						x <input type="text" id="locatex" name="x" size="5" />
+						z <input type="text" id="locatez" name="z" size="5" />
+						<input type="button" id="submit_locateplayer" name="locate" value="Locate" />
+				</div>
+			
+			</div>
+		</div>
+		<div id="locations">
+		
+		</div>
+	</div>
+	<script type="text/js-template" id="tmpl-readout">
+		<div class="prefix">{{prefix}}</div>
+		<div class="direction">{{direction}}</div>
+		<div class="suffix">{{suffix}}</div>
+	</script>
+	<script type="text/js-template" id="tmpl-list-row">
+		<ul data-id="{{id}}" data-x="{{x}}" data-y="{{y}}" data-z="{{z}}">
+			<li><span>{{name}}</span></li>
+			<li>{{style}}</li>
+			<li>x: {{x}}</li>
+			<li>z: {{z}}</li>
+		</ul>
+	</script>
+</body>
+</html>
