@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Minecraft Tourist</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<!-- Dev pointers only; Change to compiled bundles for production -->
+	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="assets/js/lib/modernizr-2.6.2.min.js"></script>
+	<script src="assets/js/lib/mustache.js"></script>
+	<script src="assets/js/helpers.js"></script>
+	<script src="assets/js/global.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body id="home" class="startup" data-module="Main" data-uid="123abc">
+
+
+	<div id="layout">
+		<div id="header" class="hide-fullscreen">
+			<div class="frame"><h1>Minecraft Tourist</h1></div>
+		</div>
+
+		<div id="stage" class="frame">
+			<div id="startup" class="hide-fullscreen hide-app">
+				<input type="number" id="currentx" name="x" placeholder="X" size="5" />
+				<input type="number" id="currentz" name="z" placeholder="Z" size="5" />
+				<button type="button" id="submit-current">Continue</button>
+				<p>
+					<button type="button" id="startup-skip">Skip this step</button>
+				</p>
+			</div>
+			<div id="app" class="hide-fullscreen hide-startup">
+				<div id="current-location"></div>
+				<div id="listings"></div>
+			</div>
+			<div id="response" class=""></div>
+			<div id="menu" class=""></div>
+			<div id="addnew" class="hide-fullscreen hide-app hide-startup">
+					<h4>Add a new location</h4>
+					<form id="newlocation">
+						<div class="coords">
+							<input type="text" name="newx" id="newx" placeholder="X" size="5" />
+							<input type="text" name="newz" id="newz" placeholder="Y" size="5" />
+							<select id="landmark" name="style">
+								<option value="Cave">Cave</option>
+								<option value="Man-made">Man-made</option>
+								<option value="Mineshaft">Mineshaft</option>
+								<option value="Village">Village</option>
+								<option value="Portal">Portal</option>
+								<option value="Stronghold">Stronghold</option>
+								<option value="Temple">Temple</option>
+							</select>
+						</div>
+						<div class="desc">
+							<input type="text" name="name" placeholder="Location name (optional)" size="20" />
+						</div>
+						<input type="hidden" name="uid" value="123abc" />
+						<input type="submit" id="savenew" name="savenew" value="Save location" />
+					</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/js-template" id="tmpl-listing-row">
+		<div class="row" data-id="{{id}}" data-x="{{x}}" data-y="{{y}}" data-z="{{z}}" data-name="{{name}}">
+			<div class="view"><button type="button" class="icon">X</button></div>
+			<div class="info">
+				<div class="name">{{name}}</div>
+				<span class="details">
+					<div class="landmark">{{style}}</div>
+					<div class="xcoord">{{x}}</div>
+					<div class="zcoord">{{z}}</div>
+				</span>
+			</div>
+		</div>
+	</script>
+	<script type="text/js-template" id="tmpl-current-location">
+		<p>You are currently {{direction}}</p>
+		<p>{{x}}, {{z}}</p>
+		<p>{{name}}</p>
+		<button type="button" id="change-location">Change location</button>
+	</script>
+	<script type="text/js-template" id="tmpl-landmarks">
+		<div id="landmark-menu">
+			<button type="button" id="cancel-menu">Close</button>
+			<ul class="options">
+				<li><button  type="button" data-value="Cave">Cave</button></li>
+				<li><button  type="button" data-value="Mineshaft">Mineshaft</button></li>
+				<li><button  type="button" data-value="Village">Village</button></li>
+				<li><button  type="button" data-value="Man-made">Man-made</button></li>
+				<li><button  type="button" data-value="Temple">Temple</button></li>
+				<li><button  type="button" data-value="Portal">Portal</button></li>
+				<li><button  type="button" data-value="Nether">Nether</button></li>
+			</ul>
+		</div>
+	</script>	
+	<script type="text/js-template" id="tmpl-menu">
+		<button type="button" id="cancel-menu">Close</button>
+				<ul class="options">
+		{{#options}}
+		<li><button type="button" data-value="{{value}}">{{label}}</button></li>
+		{{/options}}
+		</ul>
+	</script>
+	<script type="text/js-template" id="tmpl-response-bearing">
+		<div class="{{class}}">
+			<div class="name">{{name}}</div>
+			<div class="prefix">{{prefix}}</div>
+			<div class="direction">{{direction}}</div>
+			<div class="suffix">{{suffix}}</div>
+			<button type="button" id="response-continue" class="continue">{{continue}}</button>
+		</div>
+	</script>
+
+
+</body>
+</html>

@@ -7,7 +7,8 @@ App.Main = (function($, Modernizr, App) {
 		player: false,
 		destination: false,
 		distPerDay: 5172,
-		coords: {}
+		coords: {},
+		appbind: false
 	}
 	
 	
@@ -29,8 +30,11 @@ App.Main = (function($, Modernizr, App) {
 	var local = {
 		storeTemplates: function() {
 			data.templates = {
-				location: $("#tmpl-list-row").html(),
-				readout: $("#tmpl-readout").html()
+				location: $("#tmpl-listing-row").html(),
+				currentLocation: $("#tmpl-current-location").html(),
+				readout: $("#tmpl-readout").html(),
+				response: $("#tmpl-response-bearing").html(),
+				landmarks: $("#tmpl-landmarks").html()
 			}
 		},
 		
@@ -40,7 +44,7 @@ App.Main = (function($, Modernizr, App) {
 				dataType: "json",
 				success: function(response) {
 					$.each(response, function(k,v) {
-						$("#locations").append(Mustache.render(data.templates.location, v));	
+						$("#listings").append(Mustache.render(data.templates.location, v));	
 						data.coords[v.id] = v;
 					});
 					
@@ -87,9 +91,9 @@ App.Main = (function($, Modernizr, App) {
 		locatePlayer: function() {
 			data.destination = false;
 		
-			var zpos = $("#locatez").val();
+			var zpos = $("#currentz").val();
 			data.player = {
-				x: $("#locatex").val(),
+				x: $("#currentx").val(),
 				z: zpos,
 				rz: (0 - zpos)
 			}
@@ -103,15 +107,96 @@ App.Main = (function($, Modernizr, App) {
 				
 				
 				//$("#readout").html(" "+dir); 
-				local.displayReadout("You are in the", dir);
+				//local.displayReadout("You are in the", dir);
+				view.app();
+				view.currentLocation({x: data.player.x, z:data.player.z, direction:dir, name:""});
 			}
 		},
-		
+
 		displayReadout: function(prefix, direction, suffix) {
 			var o = {"prefix": prefix, "direction":direction, "suffix":suffix}
 			$("#readout").html(Mustache.render(data.templates.readout, o));
 			return(o);
+		},
+		
+		showBearing: function(dir, dist, timeToWalk) {
+			
+			var vd = {
+				class: "bearing",
+				prefix: "You need to go",
+				direction: dir,
+				suffix: "It will take you "+timeToWalk,
+				name: data.destination.name,
+				continue: "Continue"
+			}
+			
+			$("#response").html(Mustache.render(data.templates.response, vd));
+			view.response();
+			window.scrollTo(0,0);
+		},
+		
+		landmarkMenu: function() {
+			$("#response").html(data.templates.landmarks);
+			view.response();
+			window.scrollTo(0,0);
+		}		
+	}
+	
+	var view = {
+		currentLocation: function(vd) {
+			$("#current-location").html(Mustache.render(data.templates.currentLocation, vd));
+		},
+		
+		switchTo: function(classes) {
+			$("body").removeClass().addClass(classes);
+		},
+		
+		startup: function() { 
+			view.switchTo("startup");
+		},
+		
+		fullscreen: function() { 
+			view.switchTo("fullscreen");
+		},
+		
+		app: function() { 
+			$("#response").empty();
+			$("#menu").empty();
+			view.switchTo("app");
+			
+			if (!data.appbind) {
+				data.appbind = true;
+				$("#save-new").on("click", function(e) {
+					e.preventDefault();
+					alert("saved");
+				});
+				
+				$("#change-landmark").on("click", function(e) {
+					e.preventDefault();
+					local.landmarkMenu();
+					
+					$("#response #landmark-menu .options button").on("click", function() {
+						var landmark = $(this).data("value");
+						$("#change-landmark").html(landmark);
+						$("#newlandmark").val(landmark);
+						view.app();
+						
+					});
+				});
+			}
+		},
+		
+		menu: function() { 
+			view.switchTo("fullscreen menu");
+		},
+		
+		response: function() { 
+			view.switchTo("fullscreen response");
+			
 		}
+		
+		
+	
 	}
 	
 	
@@ -123,6 +208,14 @@ App.Main = (function($, Modernizr, App) {
 			this.submitNew();
 			this.submitLocate();
 			this.viewDestination();
+			
+			$("#go-main").on("click", function() {
+				view.app();
+			});
+			
+			$("#response").on("click", ".bearing .continue", function() {
+				view.app();
+			});
 		},
 		
 		submitNew: function() {
@@ -145,7 +238,7 @@ App.Main = (function($, Modernizr, App) {
 		},
 		
 		submitLocate: function() {
-			$("#submit_locateplayer").on("click", function(e) {
+			$("#submit-current").on("click", function(e) {
 				e.preventDefault();
 				
 				
@@ -155,8 +248,9 @@ App.Main = (function($, Modernizr, App) {
 		},
 
 		viewDestination: function() {
-			$("#locations").on("click", "td .view", function(e) {
-				var dest = $(this).parent().parent().data();
+			$("#listings").on("click", ".view button", function(e) {
+				var dest = $(this).parentsUntil(".row").parent().data();
+				console.log(dest);
 				dest.rz = (0 - dest.z);
 				data.destination = dest;
 				
@@ -187,9 +281,9 @@ App.Main = (function($, Modernizr, App) {
 					}
 					
 					//$("#readout").html(" "+dir+" for "+dist+" blocks. );
-					
-					local.displayReadout("To get to "+data.destination.name+" head ", dir, "It will take you "+timeToWalk+" walking.");
-					window.scrollTo(0,0);
+					local.showBearing(dir, dist, timeToWalk);
+					//local.displayReadout("To get to "+data.destination.name+" head ", dir, "It will take you "+timeToWalk+" walking.");
+					//window.scrollTo(0,0);
 				} else {
 					alert("TBD");
 				}
