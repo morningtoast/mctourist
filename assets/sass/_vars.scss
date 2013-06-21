@@ -8,16 +8,20 @@ $font_glyphs: 'icomoon';
 
 $icon_home: "\e002";
 $icon_compass: "\e0f9";
-$icon_pin: "\e0f7";
-$icon_arrowup: "\e3b4";
-$icon_arrowright: "\e3b5";
-$icon_arrowdown: "\e3b6";
-$icon_arrowleft: "\e3b7";
 $icon_share: "\e47b";
 $icon_check: "\e368";
 $icon_xmark: "\e366";
-$icon_map: "\e0fd";
 $icon_trash: "\e250";
+$icon_menu: "\e29d";
+$icon_plus: "\e376";
+$icon_nw: "\e3d0";
+$icon_n: "\e3d1";
+$icon_ne: "\e3d2";
+$icon_e: "\e3d3";
+$icon_se: "\e3d4";
+$icon_s: "\e3d5";
+$icon_sw: "\e3d6";
+$icon_w: "\e3d7";
 
 @mixin icon ($content) {
 	font-family: $font_glyphs;

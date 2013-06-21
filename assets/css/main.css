@@ -1,194 +1,88 @@
-/* Variables */
-/* Glyphs */
-/* Responsive */
-/* Custom */
-/* Utility */
-/* line 3, ../sass/main.scss */
-#header {
-  background-color: #000;
-  color: #ccc;
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 8px;
-}
-/* line 10, ../sass/main.scss */
-#header h1 {
-  padding: 0;
-  margin: 0;
-}
-/* line 14, ../sass/main.scss */
-#header h1:before {
-  font-family: "icomoon";
-  content: "\e0fd";
-  font-weight: normal;
-  padding-right: 10px;
-}
+/*
+Syntax error: Undefined variable: "$icon_map".
+        on line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss, in `icon'
+        from line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss
 
-/* line 22, ../sass/main.scss */
-#currentpos {
-  text-align: center;
-  padding: 10px;
-}
-/* line 26, ../sass/main.scss */
-#currentpos h4 {
-  padding-bottom: 6px;
-}
-
-/* line 32, ../sass/main.scss */
-#newpin {
-  text-align: center;
-}
-/* line 35, ../sass/main.scss */
-#newpin h4 {
-  padding: 6px 0;
-}
-
-/* line 40, ../sass/main.scss */
-#locatex, #locatez {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 0;
-  border: solid 1px #ccc;
-  border: solid 1px #ccc;
-  width: 80px;
-  height: 40px;
-  font-size: 2rem;
-  padding: 0 5px;
-}
-
-/* line 49, ../sass/main.scss */
-#submit_locateplayer {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 0;
-  border: solid 1px #ccc;
-  background-color: #000;
-  color: #fff;
-  font-size: 2rem;
-  padding: 8px;
-  height: 40px;
-}
-
-/* line 59, ../sass/main.scss */
-#newlocation input, #newlocation select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 0;
-  border: solid 1px #ccc;
-  font-size: 2rem;
-  padding: 0 5px;
-}
-/* line 65, ../sass/main.scss */
-#newlocation .coords {
-  margin-bottom: 10px;
-}
-/* line 69, ../sass/main.scss */
-#newlocation #savenew {
-  width: 98%;
-  background-color: #036;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  margin: 10px 0;
-  border: solid 1px #003;
-}
-
-/* line 80, ../sass/main.scss */
-#newx, #newz {
-  width: 18%;
-  height: 40px;
-}
-
-/* line 85, ../sass/main.scss */
-#landmark, .desc input {
-  height: 40px;
-  font-size: 2rem;
-  width: 58%;
-}
-
-/* line 91, ../sass/main.scss */
-.desc input {
-  width: 98%;
-}
-
-/* line 97, ../sass/main.scss */
-#locations {
-  width: 98%;
-}
-/* line 100, ../sass/main.scss */
-#locations th {
-  text-align: left;
-  background-color: #036;
-  color: #fff;
-  font-size: 1.3rem;
-  padding: 3px;
-}
-/* line 108, ../sass/main.scss */
-#locations td {
-  padding: 8px 3px;
-  font-size: 2rem;
-  vertical-align: top;
-}
-/* line 114, ../sass/main.scss */
-#locations small {
-  display: block;
-  font-size: 1.5rem;
-  color: #999;
-}
-/* line 120, ../sass/main.scss */
-#locations .int {
-  text-align: right;
-  width: 10%;
-}
-/* line 125, ../sass/main.scss */
-#locations .desc {
-  width: 80%;
-}
-/* line 129, ../sass/main.scss */
-#locations .row {
-  border-bottom: solid 1px #ccc;
-}
-/* line 133, ../sass/main.scss */
-#locations .mapit:before {
-  font-family: "icomoon";
-  content: "\e0f9";
-  padding-top: 5px;
-  display: block;
-}
-
-/* line 142, ../sass/main.scss */
-#readout.loading .icon:before {
-  font-family: "icomoon";
-  content: "\e0f9";
-  font-size: 8rem;
-  color: #333;
-}
-
-/* line 149, ../sass/main.scss */
-#readout {
-  background: url(../../images/bedge_grunge.png);
-  min-height: 100px;
-  text-align: center;
-  font-family: "news cycle",arial,helvetica,sans-serif;
-  font-size: 2.4rem;
-  padding: 10px 0;
-  border-top: solid 1px #ccc;
-  border-bottom: solid 1px #ccc;
-}
-/* line 161, ../sass/main.scss */
-#readout div.suffix {
-  font-size: 2rem;
-}
-/* line 165, ../sass/main.scss */
-#readout div.direction {
-  font-size: 3.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: .8em;
-}
+Backtrace:
+C:/www/htdocs/projects/mctourist/assets/sass/main.scss:15:in `icon'
+C:/www/htdocs/projects/mctourist/assets/sass/main.scss:15
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/node.rb:40:in `perform'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:255:in `visit_mixin'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:255:in `visit_mixin'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:\Program Files (x86)\Scout\bin\compass:12:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$icon_map\".\A         on line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss, in `icon'\A         from line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss"; }
