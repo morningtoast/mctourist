@@ -1,88 +1,422 @@
+/* Variables */
+/* Glyphs */
+/* Responsive */
+/* Custom */
+/* Utility */
 /*
-Syntax error: Undefined variable: "$icon_map".
-        on line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss, in `icon'
-        from line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss
-
-Backtrace:
-C:/www/htdocs/projects/mctourist/assets/sass/main.scss:15:in `icon'
-C:/www/htdocs/projects/mctourist/assets/sass/main.scss:15
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/node.rb:40:in `perform'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:255:in `visit_mixin'
-org/jruby/RubyArray.java:2336:in `collect'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:255:in `visit_mixin'
-org/jruby/RubyKernel.java:2096:in `send'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2096:in `send'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2096:in `send'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
-C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:\Program Files (x86)\Scout\bin\compass:12:in `(root)'
+	font-family:"news cycle",arial,helvetica,sans-serif; 
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$icon_map\".\A         on line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss, in `icon'\A         from line 15 of C:/www/htdocs/projects/mctourist/assets/sass/main.scss"; }
+/* line 7, ../sass/main.scss */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* line 12, ../sass/main.scss */
+body {
+  font-family: "news cycle",arial,helvetica,sans-serif;
+  background: url(../../images/dark_dotted.png);
+  color: #999;
+}
+
+/* line 18, ../sass/main.scss */
+#layout {
+  max-width: 1000%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* line 24, ../sass/main.scss */
+#layout-ticket, #layout-switcher {
+  -webkit-transition: .2s all ease;
+  -moz-transition: .2s all ease;
+  transition: .2s all ease;
+  width: 100%;
+}
+
+/* line 31, ../sass/main.scss */
+#layout-ticket {
+  position: relative;
+  background-color: #F5F4DF;
+  color: #000;
+  float: left;
+  margin-left: 0;
+}
+
+/* line 39, ../sass/main.scss */
+.view-switcher #layout-ticket {
+  margin-left: -100%;
+}
+
+/* line 45, ../sass/main.scss */
+#layout-switcher {
+  margin-right: -200%;
+  float: left;
+}
+/* line 49, ../sass/main.scss */
+#layout-switcher .container {
+  background-color: #fff;
+  text-align: center;
+}
+/* line 54, ../sass/main.scss */
+#layout-switcher h4 {
+  text-align: center;
+  color: #000;
+  font-size: 2rem;
+}
+/* line 60, ../sass/main.scss */
+#layout-switcher input {
+  font-size: 2.5rem;
+  width: 80px;
+  padding: 5px;
+}
+/* line 66, ../sass/main.scss */
+#layout-switcher .menu {
+  text-align: right;
+  background-color: #6E8FBA;
+  padding: 8px 25px;
+  border-bottom: solid 1px #999;
+}
+/* line 108, ../sass/_vars.scss */
+#layout-switcher .menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 73, ../sass/main.scss */
+#layout-switcher .menu .close {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 2.99rem;
+  width: 2.99rem;
+  height: 2.99rem;
+  text-indent: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 2.3rem;
+  float: right;
+  color: #fff;
+}
+/* line 46, ../sass/_vars.scss */
+#layout-switcher .menu .close:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.15rem;
+  left: 50%;
+  margin-left: -1.15rem;
+  display: block;
+  width: 2.3rem;
+  height: 2.3rem;
+  content: "\e366";
+  font-family: "icomoon";
+  font-size: 2.3rem;
+  text-indent: 0;
+}
+
+/* line 82, ../sass/main.scss */
+#list-location {
+  margin-top: 25px;
+}
+/* line 85, ../sass/main.scss */
+#list-location ul {
+  margin-bottom: 50px;
+}
+/* line 89, ../sass/main.scss */
+#list-location li {
+  background-color: #fff;
+  text-align: left;
+  border-bottom: solid 1px #999;
+  position: relative;
+}
+/* line 95, ../sass/main.scss */
+#list-location li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #000;
+  font-size: 2rem;
+}
+/* line 102, ../sass/main.scss */
+#list-location li a small {
+  display: block;
+  color: #999;
+  font-size: 1.5rem;
+}
+
+/* line 116, ../sass/main.scss */
+.view-switcher #layout-switcher {
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 123, ../sass/main.scss */
+body.active .nav {
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 124, ../sass/main.scss */
+body.active .main_content {
+  margin-left: -100%;
+}
+
+/* line 127, ../sass/main.scss */
+#layout-header {
+  background-color: #6E8FBA;
+  border-bottom: solid 1px #333;
+  color: #fff;
+}
+/* line 132, ../sass/main.scss */
+#layout-header h1 {
+  font-weight: normal;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+/* line 108, ../sass/_vars.scss */
+#layout-header .menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 142, ../sass/main.scss */
+#layout-header ul {
+  float: right;
+  padding: 6px 15px;
+}
+/* line 108, ../sass/_vars.scss */
+#layout-header ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 148, ../sass/main.scss */
+#layout-header li {
+  float: left;
+  padding-left: 12px;
+}
+/* line 152, ../sass/main.scss */
+#layout-header li .home {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 2.99rem;
+  width: 2.99rem;
+  height: 2.99rem;
+  text-indent: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 2.3rem;
+  color: #fff;
+  position: absolute;
+  left: 15px;
+}
+/* line 46, ../sass/_vars.scss */
+#layout-header li .home:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.15rem;
+  left: 50%;
+  margin-left: -1.15rem;
+  display: block;
+  width: 2.3rem;
+  height: 2.3rem;
+  content: "\e002";
+  font-family: "icomoon";
+  font-size: 2.3rem;
+  text-indent: 0;
+}
+/* line 159, ../sass/main.scss */
+#layout-header li .add {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 2.99rem;
+  width: 2.99rem;
+  height: 2.99rem;
+  text-indent: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 2.3rem;
+  color: #fff;
+}
+/* line 46, ../sass/_vars.scss */
+#layout-header li .add:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.15rem;
+  left: 50%;
+  margin-left: -1.15rem;
+  display: block;
+  width: 2.3rem;
+  height: 2.3rem;
+  content: "\e376";
+  font-family: "icomoon";
+  font-size: 2.3rem;
+  text-indent: 0;
+}
+/* line 164, ../sass/main.scss */
+#layout-header li .menu {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 2.99rem;
+  width: 2.99rem;
+  height: 2.99rem;
+  text-indent: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 2.3rem;
+  color: #fff;
+}
+/* line 46, ../sass/_vars.scss */
+#layout-header li .menu:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.15rem;
+  left: 50%;
+  margin-left: -1.15rem;
+  display: block;
+  width: 2.3rem;
+  height: 2.3rem;
+  content: "\e29d";
+  font-family: "icomoon";
+  font-size: 2.3rem;
+  text-indent: 0;
+}
+
+/* line 172, ../sass/main.scss */
+#flipper {
+  margin: 20px 0;
+}
+/* line 108, ../sass/_vars.scss */
+#flipper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 176, ../sass/main.scss */
+#flipper li {
+  float: left;
+  text-align: center;
+}
+/* line 181, ../sass/main.scss */
+#flipper .station {
+  width: 40%;
+}
+/* line 184, ../sass/main.scss */
+#flipper .station .label {
+  font-size: 1.3rem;
+  color: #666;
+}
+/* line 190, ../sass/main.scss */
+#flipper .icon {
+  width: 20%;
+  padding-top: 15px;
+}
+/* line 195, ../sass/main.scss */
+#flipper h2 {
+  font-size: 5.5rem;
+  line-height: 1em;
+}
+/* line 200, ../sass/main.scss */
+#flipper .icon span {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 6.5rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  text-indent: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 5rem;
+}
+/* line 46, ../sass/_vars.scss */
+#flipper .icon span:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -2.5rem;
+  left: 50%;
+  margin-left: -2.5rem;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  content: "\e405";
+  font-family: "icomoon";
+  font-size: 5rem;
+  text-indent: 0;
+}
+/* line 204, ../sass/main.scss */
+#flipper .desc {
+  font-size: 2rem;
+}
+/* line 208, ../sass/main.scss */
+#flipper .coords {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+/* line 215, ../sass/main.scss */
+#details {
+  border-top: solid 1px #999;
+  border-bottom: solid 1px #999;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+/* line 108, ../sass/_vars.scss */
+#details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 222, ../sass/main.scss */
+#details li {
+  float: left;
+}
+/* line 227, ../sass/main.scss */
+#details .direction {
+  width: 50%;
+  border-right: solid 1px #999;
+}
+/* line 231, ../sass/main.scss */
+#details .direction .label:before {
+  font-family: "icomoon";
+  content: "\e3d6";
+  padding-right: 5px;
+}
+/* line 237, ../sass/main.scss */
+#details .days {
+  width: 27%;
+  border-right: solid 1px #999;
+  padding-left: 3%;
+}
+/* line 242, ../sass/main.scss */
+#details .days .label:before {
+  font-family: "icomoon";
+  content: "\e368";
+  padding-right: 5px;
+}
+/* line 248, ../sass/main.scss */
+#details .distance {
+  width: 17%;
+  padding-left: 3%;
+}
+/* line 252, ../sass/main.scss */
+#details .distance .label:before {
+  font-family: "icomoon";
+  content: "\e3d6";
+  padding-right: 5px;
+}
+/* line 258, ../sass/main.scss */
+#details .label {
+  font-size: 1.3rem;
+  color: #666;
+  padding-top: 8px;
+}
+/* line 264, ../sass/main.scss */
+#details h3 {
+  font-size: 2.5rem;
+  line-height: 1em;
+  padding-bottom: 20px;
+}

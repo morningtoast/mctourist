@@ -1,171 +1,271 @@
 @import '_vars.scss';
 
-#header {
-	background-color: #000;
-	color: #ccc;
-	font-size: 1rem;
-	font-weight: normal;
-	padding: 8px;
-	
-	h1 {
-		@include clean;
-		
-		
-		&:before {
-			@include icon($icon_map);
-			font-weight: normal;
-			padding-right: 10px;
-		}
-	}
+/*
+	font-family:"news cycle",arial,helvetica,sans-serif; 
+*/
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
 }
 
-#currentpos {
-	text-align: center;
-	padding: 10px;
-	
-	h4 {
-		padding-bottom: 6px;
-	}
+body {
+	font-family:"news cycle",arial,helvetica,sans-serif;
+	background:url(../../images/dark_dotted.png);
+	color: #999;
+}
+
+#layout {
+	max-width: 1000%; 
+	margin: 0px auto; 
+	overflow: hidden;
+}
+
+#layout-ticket, #layout-switcher {
+	-webkit-transition: .2s all ease;
+	-moz-transition: .2s all ease;
+	transition: .2s all ease; 
+	width: 100%; 
+}
+
+#layout-ticket {
+	position: relative;
+	background-color: #F5F4DF;
+	color: #000;
+	float: left;
+	margin-left: 0;
+}
+
+.view-switcher #layout-ticket {
+	margin-left: -100%;
 }
 
 
-#newpin {
-	text-align: center;
-	
-	h4 {
-		padding: 6px 0;
-	}
-}
 
-#locatex, #locatez {
-	@include cleanbutton;
-	border: solid 1px #ccc;
-	width: 80px;
-	height: 40px;
-	font-size: 2rem;
-	padding: 0 5px;
-}
-
-#submit_locateplayer {
-	@include cleanbutton;
-	background-color: #000;
-	color: #fff;
-	font-size: 2rem;
-	padding: 8px;
-	height: 40px;
-}
-
-#newlocation {
-	input, select { 
-		@include cleanbutton;
-		font-size: 2rem;
-		padding: 0 5px;
-	}
+#layout-switcher {
+	margin-right: -200%;
+	float: left;
 	
-	.coords {
-		margin-bottom: 10px;
-	}
-	
-	#savenew {
-		width: 98%;
-		background-color: #036;
-		color: #fff;
+	.container {
+		background-color: #fff;
 		text-align: center;
+	}
+	
+	h4 {
+		text-align: center;
+		color: #000;
+		font-size: 2rem;
+	}
+	
+	input {
+		font-size: 2.5rem;
+		width: 80px;
 		padding: 5px;
-		margin: 10px 0;
-		border: solid 1px #003;
+	}
+	
+	.menu {
+		@include clear;
+		text-align: right;
+		background-color: #6E8FBA;
+		padding: 8px 25px;
+		border-bottom: solid 1px #999;
+		
+		.close {
+			@include iconReplace(2.3rem, $icon_xmark);
+			float: right;
+			color: #fff;
+			
+		}
 	}	
 }
 
-#newx, #newz {
-	width: 18%;
-	height: 40px;
-}
+#list-location {
+	margin-top:25px;
 
-#landmark, .desc input {
-	height: 40px;
-	font-size: 2rem;
-	width: 58%;
-}
+	ul {
+		margin-bottom:50px;
+	}
 
-.desc input {
-	width: 98%;
-}
-
-
-
-#locations {
-	width: 98%;
-	
-	th {
+	li {
+		background-color: #fff;
 		text-align: left;
-		background-color: #036;
-		color: #fff;
-		font-size: 1.3rem;
-		padding: 3px;
+		border-bottom: solid 1px #999;
+		position: relative;
+		
+		a {
+			display: block;
+			text-decoration: none;
+			padding: 5px 15px;
+			color: #000;
+			font-size: 2rem;
+			
+			small {
+				display: block;
+				color: #999;
+				font-size: 1.5rem;
+			}
+		}
+
+			
+	}
+
+}
+
+
+
+.view-switcher #layout-switcher {
+	margin-right: 0;
+	width:100%;
+}
+
+
+
+body.active .nav { margin-right: 0; width:100%; }
+	body.active .main_content { margin-left: -100%; }
+
+
+#layout-header {
+	background-color: #6E8FBA;
+	border-bottom: solid 1px #333;
+	color: #fff;
+	
+	h1 {
+		font-weight: normal;
+		padding: 10px 0 20px;
+		text-align: center;	
 	}
 	
-	td {
-		padding: 8px 3px;
-		font-size: 2rem;
-		vertical-align: top;
+	.menu { 
+		@include clear;
 	}
 	
-	small {
-		display: block;
-		font-size: 1.5rem;
-		color: #999;
+	ul {
+		@include clear;
+		float: right;
+		padding: 6px 15px;
 	}
 	
-	.int { 
-		text-align: right;
-		width: 10%;
+	li {
+		float: left; 
+		padding-left: 12px;
+		
+		.home {
+			@include iconReplace(2.3rem, $icon_home);
+			color: #fff;
+			position: absolute;
+			left: 15px;
+		}
+		
+		.add {
+			@include iconReplace(2.3rem, $icon_plus);
+			color: #fff;
+		}
+		
+		.menu {
+			@include iconReplace(2.3rem, $icon_menu);
+			color: #fff;
+		}
+	}
+
+}
+
+#flipper {
+	@include clear;
+	margin: 20px 0;
+
+	li {
+		float: left;
+		text-align: center;
+	}
+	
+	.station {
+		width: 40%;
+		
+		.label {
+			font-size: 1.3rem;
+			color: #666;
+		}
+	}
+	
+	.icon {
+		width: 20%;
+		padding-top: 15px;
+	}
+	
+	h2 {
+		font-size: 5.5rem;
+		line-height: 1em;
+	}
+	
+	.icon span {
+		@include iconReplace(5rem, $icon_dest);
 	}
 	
 	.desc {
-		width: 80%;
-	}
-	
-	.row {
-		border-bottom: solid 1px #ccc;
-	}
-	
-	.mapit:before {
-		@include icon($icon_compass);
-		padding-top: 5px;
-		display: block;
-	}
-}
-
-#readout.loading {
-
-	.icon:before {
-		@include icon($icon_compass);
-		font-size: 8rem;
-		color: #333;
-	}	
-}
-
-#readout {
-	background:url(../../images/bedge_grunge.png);
-	min-height: 100px;
-	text-align: center;
-	font-family:"news cycle",arial,helvetica,sans-serif; 
-	font-size: 2.4rem;
-	padding: 10px 0;
-	border-top: solid 1px #ccc;
-	border-bottom: solid 1px #ccc;
-	
-
-	
-	div.suffix {
 		font-size: 2rem;
 	}
 	
-	div.direction {
-		font-size:3.6rem;
-		font-weight:700;
-		text-transform:uppercase; 
-		line-height: .8em;
+	.coords {
+		font-size: 1.3rem;
+		color: #999;
 	}
+
 }
+
+#details {
+	@include clear;
+	border-top: solid 1px #999;
+	border-bottom: solid 1px #999;
+	margin-top: 10px;
+	padding: 0 15px;
+	
+	li {
+		float: left;
+	}
+	
+	
+	.direction {
+		width: 50%;
+		border-right: solid 1px #999;
+		
+		.label:before {
+			@include icon($icon_sw);
+			padding-right: 5px;
+		}
+	}
+	
+	.days {
+		width: 27%;
+		border-right: solid 1px #999;
+		padding-left: 3%;
+		
+		.label:before {
+			@include icon($icon_check);
+			padding-right: 5px;
+		}
+	}
+	
+	.distance {
+		width: 17%;
+		padding-left: 3%;
+		
+		.label:before {
+			@include icon($icon_sw);
+			padding-right: 5px;
+		}
+	}
+	
+	.label {
+		font-size: 1.3rem;
+		color: #666;
+		padding-top:8px;
+	}
+	
+	h3 {
+		font-size: 2.5rem;
+		line-height: 1em;
+		padding-bottom: 20px;
+	}
+	
+}
+

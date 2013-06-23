@@ -304,12 +304,13 @@ table {
 
 /* Custom resets */
 /* line 9, ../sass/reset.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, ul, ol {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-/* line 12, ../sass/reset.scss */
+/* line 13, ../sass/reset.scss */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -320,23 +321,24 @@ input::-webkit-inner-spin-button {
   border: solid 1px #ccc;
 }
 
-/* line 14, ../sass/reset.scss */
+/* line 15, ../sass/reset.scss */
 input, select {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-/* line 16, ../sass/reset.scss */
+/* line 17, ../sass/reset.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 20, ../sass/reset.scss */
+/* line 21, ../sass/reset.scss */
 body {
   font-size: 1.6rem;
 }
 
-/* line 24, ../sass/reset.scss */
+/* line 25, ../sass/reset.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

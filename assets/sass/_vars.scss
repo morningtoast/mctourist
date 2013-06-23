@@ -22,12 +22,42 @@ $icon_se: "\e3d4";
 $icon_s: "\e3d5";
 $icon_sw: "\e3d6";
 $icon_w: "\e3d7";
+$icon_dest: "\e405";
 
 @mixin icon ($content) {
 	font-family: $font_glyphs;
 	content: $content;
 }
 
+
+// Replaces text with an icon
+@mixin iconReplace($iconSize, $content) {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0 0 0 ($iconSize*1.3);
+    width: ($iconSize*1.3);
+    height: ($iconSize*1.3);
+    text-indent: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: $iconSize;
+
+    &:before {
+        position: absolute;
+        top: 50%;
+        margin-top: -($iconSize/2);
+        left: 50%;
+        margin-left: -($iconSize/2);
+        display: block;
+        width: $iconSize;
+        height: $iconSize;
+        content: $content;
+        font-family: $font_glyphs;
+        font-size: $iconSize;
+        text-indent: 0;
+    }
+}
 
 
 /* Responsive */
@@ -85,6 +115,7 @@ $size_large_max: 1120px;
 @mixin clean {
 	padding: 0;
 	margin: 0;
+	list-style: none;
 }
 
 @mixin offsite {

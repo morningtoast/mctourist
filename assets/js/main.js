@@ -21,6 +21,7 @@ App.Main = (function($, Modernizr, App) {
 		local.storeTemplates();
 		local.load();
 		
+		//document.ontouchmove = function(e){ e.preventDefault(); }
 		console.log(data.foo);
 	}
 	
@@ -111,6 +112,18 @@ App.Main = (function($, Modernizr, App) {
 			var o = {"prefix": prefix, "direction":direction, "suffix":suffix}
 			$("#readout").html(Mustache.render(data.templates.readout, o));
 			return(o);
+		},
+		
+		toggleScroll: function() {
+			window.scrollTo(0, 0);
+			$("body").toggleClass("canscroll");
+	 
+			if ($("body").hasClass("canscroll")) {
+				//document.ontouchmove = function(e){ return true; } // Allow scroll when on a content page
+			} else {
+				
+				//document.ontouchmove = function(e){ e.preventDefault(); } // Disable scroll when going back to ticket
+			}
 		}
 	}
 	
@@ -123,6 +136,17 @@ App.Main = (function($, Modernizr, App) {
 			this.submitNew();
 			this.submitLocate();
 			this.viewDestination();
+			
+			$("#layout-ticket .station").on("click", function() {
+				$("#layout").toggleClass("view-switcher");
+				local.toggleScroll();
+			});
+			
+			$("#layout-switcher .close").on("click", function(e) {
+				e.preventDefault();
+				$("#layout").toggleClass("view-switcher");
+				local.toggleScroll();
+			});
 		},
 		
 		submitNew: function() {
