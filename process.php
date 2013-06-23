@@ -34,4 +34,8 @@
 	
 		echo json_encode($a_newData);
 	}
+	
+	if ($_GET["delete"]) {
+		echo json_encode(array("foo"=>123));
+	}
 ?>

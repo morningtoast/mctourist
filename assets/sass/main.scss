@@ -15,6 +15,12 @@ body {
 	color: #999;
 }
 
+body.response {
+	background:none;
+	background-color: #fff;
+	color: #333;
+}
+
 #layout {
 	max-width: 1000%; 
 	margin: 0px auto; 
@@ -266,6 +272,139 @@ body.active .nav { margin-right: 0; width:100%; }
 		line-height: 1em;
 		padding-bottom: 20px;
 	}
-	
 }
 
+
+#layout-add {
+	@include clear;
+	background-color: #fff;
+	text-align: center;
+
+	.menu {
+		@include clear;
+		text-align: right;
+		background-color: #6E8FBA;
+		padding: 8px 25px;
+		border-bottom: solid 1px #999;
+		
+		.close {
+			@include iconReplace(2.3rem, $icon_xmark);
+			float: right;
+			color: #fff;
+			
+		}
+	}
+	
+	#add-form {
+		@include edge;
+		text-align: center;
+		padding-top:10px;
+		padding-bottom: 40px;
+		
+		.row {
+			padding:8px 0;
+		}
+		
+		input, select {
+			font-size: 2.5rem;
+		}
+		
+		.coords {
+			input {
+				width: 49%;
+			}
+		}
+		
+		.landmark select {
+			width: 100%;
+		}
+		
+		.description input {
+			width: 100%;
+		}
+		
+		.submit input {
+			width: 100%;
+		}
+	}
+}
+
+
+
+#layout-list {
+	@include clear;
+	background-color: #fff;
+
+	.menu {
+		@include clear;
+		text-align: right;
+		background-color: #6E8FBA;
+		padding: 8px 25px;
+		border-bottom: solid 1px #999;
+		
+		.close {
+			@include iconReplace(2.3rem, $icon_xmark);
+			float: right;
+			color: #fff;
+			
+		}
+	}
+	
+	table {
+		font-size: 2rem;
+		line-height: 1em;
+	}
+	
+	tr {
+		padding: 5px 0;
+		
+		&.rowtop td {
+			border-top: solid 4px #000;
+		}
+		
+		&.rowbottom td {
+			color: #999;
+			padding: 10px 5px;
+			
+			.landmark { width: 70%; }
+			.coord { width: 15%; }
+		}
+	}
+	
+	td {
+		line-height: 1em;
+		color: #333;
+		padding: 3px 5px;
+		
+		
+	}
+	
+	.bottom {
+		border-bottom: solid 1px #999;
+	}
+	
+	.icon {
+		border-left: solid 1px #999;
+	}
+	
+	.name {
+		font-size: 2.5rem;
+		padding: 8px 3px;
+	}
+	
+	.label {
+		font-size: 1.3rem;
+		color: #999;
+		line-height: 1em;
+	}
+	
+	.coord {
+		text-align: right;
+	}
+	
+	.delete {
+		@include iconReplace(3.5rem, $icon_trash);
+		color: #900;
+		
+	}	
+}

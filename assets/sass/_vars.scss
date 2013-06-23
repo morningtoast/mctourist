@@ -94,6 +94,11 @@ $size_large_max: 1120px;
 	border: solid 1px #ccc;
 }
 
+@mixin edge {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 
 /* Utility */
 

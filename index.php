@@ -1,6 +1,9 @@
 <?
 	$a_route = false;
 	$uid     = false;
+	$view    = false;
+	$action  = false;
+	$a_js    = array("Main");
 
 	if (!$_GET["route"]) { 
 		$a_route = "home";
@@ -8,10 +11,8 @@
 		$a_route = $_GET["route"];
 	}
 	
-	
 	$a_args     = explode("/", $a_route);
 	$controller = array_shift($a_args);
-	$view       = false;
 	
 	switch ($controller) {
 		default:
@@ -20,12 +21,33 @@
 			break;
 			
 			
-		case "list":
-			$view = "ticket.php";
-			$uid  = array_shift($a_args);
+		case "map":
+			$view   = "ticket.php";
+			$uid    = array_shift($a_args);
+			$action = array_shift($a_args);
+			
+			if ($action) {
+				switch ($action) {
+					default:break;
+					
+					case "add":
+						$view   = "add.php";
+						$a_js[] = "Add";
+						break;
+						
+					case "list":
+						$view = "list.php";
+						$a_js[] = "List";
+						break;
+				
+				}
+			}
+			
 			break;
 	
 	}
+	
+	$jsModules = implode(".", $a_js);
 ?>
 <!DOCTYPE html>
 <html class="no-js">
@@ -38,17 +60,19 @@
 
 	<!-- Dev pointers only; Change to compiled bundles for production -->
 	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/main.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="/projects/mctourist/assets/js/lib/modernizr-2.6.2.min.js"></script>
-	<script src="/projects/mctourist/assets/js/lib/mustache.js"></script>
-	<script src="/projects/mctourist/assets/js/helpers.js"></script>
-	<script src="/projects/mctourist/assets/js/global.js"></script>
-	<script src="/projects/mctourist/assets/js/main.js"></script>
+	<script src="/assets/js/lib/modernizr-2.6.2.min.js"></script>
+	<script src="/assets/js/lib/mustache.js"></script>
+	<script src="/assets/js/helpers.js"></script>
+	<script src="/assets/js/global.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/add.js"></script>
+	<script src="/assets/js/list.js"></script>
 </head>
-<body id="home" data-module="Main" data-uid="<?= $uid; ?>">
+<body id="home" data-module="<?= $jsModules; ?>" data-uid="<?= $uid; ?>">
 	<? include_once($view); ?>
 </body>
 </html>

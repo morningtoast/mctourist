@@ -5,9 +5,9 @@
 				<div class="container">
 					<div class="menu">
 						<ul>
-							<li><a href="./ticket.php" class="home">Home</a></li>
-							<li><a href="" class="add">Add</a></li>
-							<li><a href="" class="menu">Menu</a></li>
+							<li><a href="/map/<?= $uid; ?>/" class="home">Home</a></li>
+							<li><a href="/map/<?= $uid; ?>/add/" class="add">Add</a></li>
+							<li><a href="/map/<?= $uid; ?>/list/" class="menu">Menu</a></li>
 						</ul>
 					</div>
 					<h1>MAYFINDER</h1>
