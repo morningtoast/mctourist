@@ -1,4 +1,6 @@
 <?
+	include_once("class_tourist.php");
+
 	if ($_GET["savenew"]) {
 		$a_data = $_GET;
 		$uid    = $a_data["uid"];
@@ -37,5 +39,13 @@
 	
 	if ($_GET["delete"]) {
 		echo json_encode(array("foo"=>123));
+	}
+	
+	if ($_GET["create"]) {
+		echo json_encode(array("uid"=>"abc123"));
+	}
+	
+	if ($_GET["load"]) {
+		echo json_encode(array("success"=>true, "uid"=>"abc123"));
 	}
 ?>

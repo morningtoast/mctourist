@@ -120,23 +120,52 @@ body.response {
   font-size: 2.3rem;
   text-indent: 0;
 }
+/* line 87, ../sass/main.scss */
+#layout-switcher .location-list .action {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 4.55rem;
+  width: 4.55rem;
+  height: 4.55rem;
+  text-indent: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 3.5rem;
+  color: #090;
+}
+/* line 46, ../sass/_vars.scss */
+#layout-switcher .location-list .action:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -1.75rem;
+  left: 50%;
+  margin-left: -1.75rem;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  content: "\e368";
+  font-family: "icomoon";
+  font-size: 3.5rem;
+  text-indent: 0;
+}
 
-/* line 88, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 #list-location {
   margin-top: 25px;
 }
-/* line 91, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 #list-location ul {
   margin-bottom: 50px;
 }
-/* line 95, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 #list-location li {
   background-color: #fff;
   text-align: left;
   border-bottom: solid 1px #999;
   position: relative;
 }
-/* line 101, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 #list-location li a {
   display: block;
   text-decoration: none;
@@ -144,37 +173,37 @@ body.response {
   color: #000;
   font-size: 2rem;
 }
-/* line 108, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 #list-location li a small {
   display: block;
   color: #999;
   font-size: 1.5rem;
 }
 
-/* line 122, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .view-switcher #layout-switcher {
   margin-right: 0;
   width: 100%;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 body.active .nav {
   margin-right: 0;
   width: 100%;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 body.active .main_content {
   margin-left: -100%;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 #layout-header {
   background-color: #6E8FBA;
   border-bottom: solid 1px #333;
   color: #fff;
 }
-/* line 138, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 #layout-header h1 {
   font-weight: normal;
   padding: 10px 0 20px;
@@ -186,7 +215,7 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 148, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 #layout-header ul {
   float: right;
   padding: 6px 15px;
@@ -197,12 +226,12 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 154, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 #layout-header li {
   float: left;
   padding-left: 12px;
 }
-/* line 158, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 #layout-header li .home {
   position: relative;
   display: block;
@@ -233,7 +262,7 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 165, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 #layout-header li .add {
   position: relative;
   display: block;
@@ -262,7 +291,7 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 170, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #layout-header li .menu {
   position: relative;
   display: block;
@@ -292,7 +321,7 @@ body.active .main_content {
   text-indent: 0;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 #flipper {
   margin: 20px 0;
 }
@@ -302,31 +331,31 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 182, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 #flipper li {
   float: left;
   text-align: center;
 }
-/* line 187, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 #flipper .station {
   width: 40%;
 }
-/* line 190, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 #flipper .station .label {
   font-size: 1.3rem;
   color: #666;
 }
-/* line 196, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 #flipper .icon {
   width: 20%;
   padding-top: 15px;
 }
-/* line 201, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 #flipper h2 {
   font-size: 5.5rem;
   line-height: 1em;
 }
-/* line 206, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 #flipper .icon span {
   position: relative;
   display: block;
@@ -354,17 +383,17 @@ body.active .main_content {
   font-size: 5rem;
   text-indent: 0;
 }
-/* line 210, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 #flipper .desc {
   font-size: 2rem;
 }
-/* line 214, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 #flipper .coords {
   font-size: 1.3rem;
   color: #999;
 }
 
-/* line 221, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #details {
   border-top: solid 1px #999;
   border-bottom: solid 1px #999;
@@ -377,58 +406,58 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 228, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 #details li {
   float: left;
 }
-/* line 233, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
 #details .direction {
   width: 50%;
   border-right: solid 1px #999;
 }
-/* line 237, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 #details .direction .label:before {
   font-family: "icomoon";
   content: "\e3d6";
   padding-right: 5px;
 }
-/* line 243, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 #details .days {
   width: 27%;
   border-right: solid 1px #999;
   padding-left: 3%;
 }
-/* line 248, ../sass/main.scss */
+/* line 253, ../sass/main.scss */
 #details .days .label:before {
   font-family: "icomoon";
   content: "\e368";
   padding-right: 5px;
 }
-/* line 254, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 #details .distance {
   width: 17%;
   padding-left: 3%;
 }
-/* line 258, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 #details .distance .label:before {
   font-family: "icomoon";
   content: "\e3d6";
   padding-right: 5px;
 }
-/* line 264, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 #details .label {
   font-size: 1.3rem;
   color: #666;
   padding-top: 8px;
 }
-/* line 270, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 #details h3 {
   font-size: 2.5rem;
   line-height: 1em;
   padding-bottom: 20px;
 }
 
-/* line 278, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 #layout-add {
   background-color: #fff;
   text-align: center;
@@ -439,7 +468,7 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 283, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 #layout-add .menu {
   text-align: right;
   background-color: #6E8FBA;
@@ -452,7 +481,7 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 290, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 #layout-add .menu .close {
   position: relative;
   display: block;
@@ -482,7 +511,7 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 298, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 #layout-add #add-form {
   padding-left: 15px;
   padding-right: 15px;
@@ -490,32 +519,90 @@ body.active .main_content {
   padding-top: 10px;
   padding-bottom: 40px;
 }
-/* line 304, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 #layout-add #add-form .row {
   padding: 8px 0;
 }
-/* line 308, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 #layout-add #add-form input, #layout-add #add-form select {
   font-size: 2.5rem;
 }
-/* line 313, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 #layout-add #add-form .coords input {
   width: 49%;
 }
-/* line 318, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 #layout-add #add-form .landmark select {
   width: 100%;
 }
-/* line 322, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 #layout-add #add-form .description input {
   width: 100%;
 }
-/* line 326, ../sass/main.scss */
+/* line 331, ../sass/main.scss */
 #layout-add #add-form .submit input {
   width: 100%;
 }
 
-/* line 334, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
+table.location-list {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1em;
+}
+/* line 342, ../sass/main.scss */
+table.location-list tr {
+  padding: 5px 0;
+}
+/* line 345, ../sass/main.scss */
+table.location-list tr.rowtop td {
+  border-top: solid 4px #000;
+}
+/* line 349, ../sass/main.scss */
+table.location-list tr.rowbottom td {
+  color: #999;
+  padding: 10px 5px;
+}
+/* line 353, ../sass/main.scss */
+table.location-list tr.rowbottom td .landmark {
+  width: 70%;
+}
+/* line 354, ../sass/main.scss */
+table.location-list tr.rowbottom td .coord {
+  width: 15%;
+}
+/* line 358, ../sass/main.scss */
+table.location-list td {
+  line-height: 1em;
+  color: #333;
+  padding: 3px 5px;
+}
+/* line 364, ../sass/main.scss */
+table.location-list .bottom {
+  border-bottom: solid 1px #999;
+}
+/* line 368, ../sass/main.scss */
+table.location-list .icon {
+  border-left: solid 1px #999;
+}
+/* line 372, ../sass/main.scss */
+table.location-list .name {
+  text-align: left;
+  font-size: 2.5rem;
+  padding: 8px 3px;
+}
+/* line 378, ../sass/main.scss */
+table.location-list .label {
+  font-size: 1.3rem;
+  color: #999;
+  line-height: 1em;
+}
+/* line 384, ../sass/main.scss */
+table.location-list .coord {
+  text-align: right;
+}
+
+/* line 389, ../sass/main.scss */
 #layout-list {
   background-color: #fff;
 }
@@ -525,7 +612,7 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 338, ../sass/main.scss */
+/* line 393, ../sass/main.scss */
 #layout-list .menu {
   text-align: right;
   background-color: #6E8FBA;
@@ -538,7 +625,7 @@ body.active .main_content {
   display: table;
   clear: both;
 }
-/* line 345, ../sass/main.scss */
+/* line 400, ../sass/main.scss */
 #layout-list .menu .close {
   position: relative;
   display: block;
@@ -568,63 +655,8 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 353, ../sass/main.scss */
-#layout-list table {
-  font-size: 2rem;
-  line-height: 1em;
-}
-/* line 358, ../sass/main.scss */
-#layout-list tr {
-  padding: 5px 0;
-}
-/* line 361, ../sass/main.scss */
-#layout-list tr.rowtop td {
-  border-top: solid 4px #000;
-}
-/* line 365, ../sass/main.scss */
-#layout-list tr.rowbottom td {
-  color: #999;
-  padding: 10px 5px;
-}
-/* line 369, ../sass/main.scss */
-#layout-list tr.rowbottom td .landmark {
-  width: 70%;
-}
-/* line 370, ../sass/main.scss */
-#layout-list tr.rowbottom td .coord {
-  width: 15%;
-}
-/* line 374, ../sass/main.scss */
-#layout-list td {
-  line-height: 1em;
-  color: #333;
-  padding: 3px 5px;
-}
-/* line 382, ../sass/main.scss */
-#layout-list .bottom {
-  border-bottom: solid 1px #999;
-}
-/* line 386, ../sass/main.scss */
-#layout-list .icon {
-  border-left: solid 1px #999;
-}
-/* line 390, ../sass/main.scss */
-#layout-list .name {
-  font-size: 2.5rem;
-  padding: 8px 3px;
-}
-/* line 395, ../sass/main.scss */
-#layout-list .label {
-  font-size: 1.3rem;
-  color: #999;
-  line-height: 1em;
-}
-/* line 401, ../sass/main.scss */
-#layout-list .coord {
-  text-align: right;
-}
-/* line 405, ../sass/main.scss */
-#layout-list .delete {
+/* line 408, ../sass/main.scss */
+#layout-list .location-list .action {
   position: relative;
   display: block;
   margin: 0;
@@ -638,7 +670,7 @@ body.active .main_content {
   color: #900;
 }
 /* line 46, ../sass/_vars.scss */
-#layout-list .delete:before {
+#layout-list .location-list .action:before {
   position: absolute;
   top: 50%;
   margin-top: -1.75rem;

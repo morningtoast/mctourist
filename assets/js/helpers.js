@@ -24,6 +24,35 @@ function _getvars(single) {
 }
 
 
+function _loadTemplates() {
+
+}
+
+var _templates = {
+	store: {},
+	render: function(templateId, viewData) {
+		var html   = this.load(templateId);
+		var render = Mustache.render(html, viewData);
+		
+		return(render);
+	},
+	
+	load: function(elId) {
+		var name = elId.replace("#","");
+		var template;
+
+		if (!this.store[name]) {
+			var html     = $(elId).html();
+			template = this.store[name] = html;
+		} else {
+			template = this.store[name];
+		}
+			
+		return(template);
+	}
+}
+
+
 // Cookie helpers
 var _cookie = {
     create: function (name,value,days) {
@@ -54,6 +83,6 @@ var _cookie = {
     },
 
     erase: function (name) {
-        methods.cookies.create(name,"",-1);
+        _cookie.create(name,"",-1);
     }
 }        

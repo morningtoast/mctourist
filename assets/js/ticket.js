@@ -1,51 +1,67 @@
-App.Main = (function($, Modernizr, App) {
+App.Ticket = (function($, Modernizr, App) {
 	
 	// Module variables. Use for local tracking
 	var data = {
-		uid: false,
 		templates: {},
 		player: false,
 		destination: false,
-		distPerDay: 5172,
 		coords: {}
 	}
 	
 	
 	// Module init; This will run during onready if module is defined in the <body> data attribute
 	var init = function() {
-		_debug("main.init()");
+		_debug("ticket.init()");
 		bind.init();
-		data.uid = $("body").data("uid");
-		data.db  = "./"+data.uid+".txt";
 		
-		//local.storeTemplates();
-		//local.load();
+		local.load(); // Loads book location list into slider
 		
 		//document.ontouchmove = function(e){ e.preventDefault(); }
-		console.log(data.foo);
+		//console.log(data.foo);
 	}
 	
 	
 	// Local methods
 	var local = {
-		storeTemplates: function() {
-			data.templates = {
-				location: $("#tmpl-list-row").html(),
-				readout: $("#tmpl-readout").html()
-			}
-		},
 		
 		load: function() {
 			$.ajax({
-				url:data.db,
+				url:App.Global.data.saveto,
 				dataType: "json",
 				success: function(response) {
-					$.each(response, function(k,v) {
-						$("#locations").append(Mustache.render(data.templates.location, v));	
-						data.coords[v.id] = v;
+					$.each(response.locations, function(k,v) {
+						//$("#locations").append(_templates.render("#tmpl-list-row",v));	
+						//data.coords[v.id] = v;
 					});
 					
-					//console.log(data.coords);
+					var fromPointId = response.recent.from;
+					var destPointId = response.recent.to;
+					
+					var fromData = response.locations[fromPointId];
+					var destData = response.locations[destPointId];
+
+				
+					var bearing   = local.getBearing(fromData.x, fromData.z, destData.x, destData.z);
+					var direction = local.getDirection(bearing);
+					var distance  = local.getDistance(fromData.x, fromData.z, destData.x, destData.z);
+					var daytime   = local.getDayTime(distance);
+					
+					var viewdata = {
+						"fromport": fromData.port,
+						"fromlandmark": fromData.landmark,
+						"fromx": fromData.x,
+						"fromz": fromData.z,
+						"toport": destData.port,
+						"tolandmark": destData.landmark,
+						"tox": destData.x,
+						"toz": destData.z,
+						"direction": direction,
+						"days": daytime,
+						"distance":distance
+					}
+					
+					$("#layout-content").html(_templates.render("#tmpl-ticket",viewdata));
+					
 				}
 			});		
 		
@@ -68,8 +84,11 @@ App.Main = (function($, Modernizr, App) {
 			return(dir);
 		},
 		
-		getDegrees: function (ox, oy, dx, dy) {
-			var rad = Math.atan2((dx - ox), (dy - oy));
+		getDegrees: function (ox, oz, dx, dz) {
+			oz   = (0 - oz);
+			dz   = (0 - dz);
+			
+			var rad = Math.atan2((dx - ox), (dz - oz));
 			var deg = rad * (180/Math.PI);
 			
 			if (deg < 0) { deg = (360 + deg); }	
@@ -77,12 +96,36 @@ App.Main = (function($, Modernizr, App) {
 			return(deg);
 		},
 		
-		getBearing: function (ox, oy, dx, dy) {
-			return(local.getDegrees(ox, oy, dx, dy));
+		getBearing: function (ox, oz, dx, dz) {
+			return(local.getDegrees(ox, oz, dx, dz));
 		},
 		
-		getOrigin: function(x, y) {
-			return(local.getDegrees(x, 0, y, 0));
+		getOrigin: function(x, z) {
+			return(local.getDegrees(x, 0, z, 0));
+		},
+		
+		getDistance: function (ox, oz, dx, dz) {
+			oz   = (0 - oz);
+			dz   = (0 - dz);
+			
+			var pow  = Math.pow((dx - ox),2) + Math.pow((dz - oz),2);
+			var dist = Math.floor(Math.sqrt(pow));
+			return(dist);
+		},
+		
+		getDayTime: function(dist) {
+			var days    = 1;
+			var halfDay = Math.floor(data.distPerDay / 2);
+		
+			if (dist >= App.Global.data.distPerDay) {
+				days = Math.floor(dist / App.Global.data.distPerDay);
+			} else {
+				if (dist < halfDay) {
+					days = "< 1";
+				}
+			}		
+			
+			return(days);
 		},
 		
 		locatePlayer: function() {
@@ -133,38 +176,36 @@ App.Main = (function($, Modernizr, App) {
 	var bind = {
 		init: function() {
 			console.log("bind.init");
-			this.submitNew();
+			this.logout();
+			this.changeWaypoint();
 			this.submitLocate();
 			this.viewDestination();
 			
-			$("#layout-ticket .station").on("click", function() {
-				$("#layout").toggleClass("view-switcher");
-				local.toggleScroll();
-			});
+
 			
-			$("#layout-switcher .close").on("click", function(e) {
+			
+		},
+		
+		logout: function() {
+			$("#layout-ticket .menu .home").on("click", function(e) {
 				e.preventDefault();
-				$("#layout").toggleClass("view-switcher");
-				local.toggleScroll();
+				_cookie.erase("mtourist");
+				window.location = "/";
 			});
 		},
 		
-		submitNew: function() {
-			$("#savenew").on("click", function(e) {
+		
+		changeWaypoint: function() {
+			$("#flipper .station").on("click", function() {
+				$("#layout").toggleClass("view-switcher");
+				//local.toggleScroll();
+			});		
+			
+			$("#layout-switcher .close").on("click", function(e) {
 				e.preventDefault();
-				var formData = $("#newlocation").serialize()+"&savenew=1";
-				$.ajax({
-					url:"process.php",
-					data: formData,
-					dataType: "json",
-					success: function(response) {
-						$("#newlocation input[type=text]").val("");
-						$("#locations").append(Mustache.render(data.template, response));
-						
-						
-						data.coords[response.id] = response;
-					}
-				});
+				
+				$("#layout").toggleClass("view-switcher");
+				//local.toggleScroll();
 			});
 		},
 		
@@ -207,7 +248,6 @@ App.Main = (function($, Modernizr, App) {
 						if (dist < halfDay) {
 							var timeToWalk = "less than half a day";
 						}
-						
 					}
 					
 					//$("#readout").html(" "+dir+" for "+dist+" blocks. );

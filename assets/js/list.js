@@ -31,7 +31,7 @@ App.List = (function($, Modernizr, App) {
 		},
 		
 		deleteRecord: function() {
-			$("#layout-list .delete").on("click", function(e) {
+			$("#layout-list .action").on("click", function(e) {
 				e.preventDefault();
 				var id = $(this).data("id");
 				$.ajax({

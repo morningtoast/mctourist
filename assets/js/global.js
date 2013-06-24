@@ -1,9 +1,11 @@
 var App = {};
 
-App.global = (function($, Modernizr, App) {
+App.Global = (function($, Modernizr, App) {
 	
 	// Module variables. Use for local tracking
 	var data = {
+		uid: false,
+		distPerDay: 5172
 	}
 	
 	// Runs inline
@@ -37,6 +39,9 @@ App.global = (function($, Modernizr, App) {
 	// Module init; This will run during onready if module is defined in the <body> data attribute
 	var init = function() {
 		_debug("global.init()");
+		
+		data.uid    = $("body").data("uid");
+		data.saveto = "/data/"+data.uid;
 	}
 	
 	
@@ -65,8 +70,8 @@ App.global = (function($, Modernizr, App) {
 
 // END module
 
-App.global.instant();
+App.Global.instant();
 
 $(document).ready(function() {
-    App.global.onready();
+    App.Global.onready();
 });

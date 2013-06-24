@@ -83,6 +83,11 @@ body.response {
 			
 		}
 	}	
+	
+	.location-list .action {
+		@include iconReplace(3.5rem, $icon_check);
+		color: #090;
+	}
 }
 
 #list-location {
@@ -329,7 +334,57 @@ body.active .nav { margin-right: 0; width:100%; }
 	}
 }
 
+	table.location-list {
+		width: 100%;
+		font-size: 2rem;
+		line-height: 1em;
+		
+		tr {
+			padding: 5px 0;
+			
+			&.rowtop td {
+				border-top: solid 4px #000;
+			}
+			
+			&.rowbottom td {
+				color: #999;
+				padding: 10px 5px;
+				
+				.landmark { width: 70%; }
+				.coord { width: 15%; }
+			}
+		}
 
+		td {
+			line-height: 1em;
+			color: #333;
+			padding: 3px 5px;
+		}	
+
+		.bottom {
+			border-bottom: solid 1px #999;
+		}
+		
+		.icon {
+			border-left: solid 1px #999;
+		}
+		
+		.name {
+			text-align: left;
+			font-size: 2.5rem;
+			padding: 8px 3px;
+		}
+		
+		.label {
+			font-size: 1.3rem;
+			color: #999;
+			line-height: 1em;
+		}
+		
+		.coord {
+			text-align: right;
+		}
+	}
 
 #layout-list {
 	@include clear;
@@ -350,61 +405,9 @@ body.active .nav { margin-right: 0; width:100%; }
 		}
 	}
 	
-	table {
-		font-size: 2rem;
-		line-height: 1em;
-	}
-	
-	tr {
-		padding: 5px 0;
-		
-		&.rowtop td {
-			border-top: solid 4px #000;
-		}
-		
-		&.rowbottom td {
-			color: #999;
-			padding: 10px 5px;
-			
-			.landmark { width: 70%; }
-			.coord { width: 15%; }
-		}
-	}
-	
-	td {
-		line-height: 1em;
-		color: #333;
-		padding: 3px 5px;
-		
-		
-	}
-	
-	.bottom {
-		border-bottom: solid 1px #999;
-	}
-	
-	.icon {
-		border-left: solid 1px #999;
-	}
-	
-	.name {
-		font-size: 2.5rem;
-		padding: 8px 3px;
-	}
-	
-	.label {
-		font-size: 1.3rem;
-		color: #999;
-		line-height: 1em;
-	}
-	
-	.coord {
-		text-align: right;
-	}
-	
-	.delete {
+	.location-list .action {
 		@include iconReplace(3.5rem, $icon_trash);
 		color: #900;
-		
 	}	
+	
 }

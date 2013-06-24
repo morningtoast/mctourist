@@ -4,14 +4,14 @@
 			<a href="/map/<?= $uid; ?>/" class="close">Close</a></li>
 		</div>
 	</div>
-	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<table class="location-list" width="100%" cellpadding="0" cellspacing="0" border="0">
 		<? for ($a=0; $a < 15; $a++) { ?>
 		<tr class="rowtop">
 			<td colspan="3" width="90%" class="bottom">
 				<div class="name">Name of place</div>
 			</td>
 			<td rowspan="2" class="icon">
-				<a href="#" data-id="12345678" class="delete">Delete</a>
+				<a href="#" data-id="12345678" class="action">-</a>
 			</td>
 		</tr>
 		<tr class="rowbottom">
@@ -29,7 +29,6 @@
 		</tr>
 		<!-- row -->
 		<? } ?>
-		
 	</table>
 	
 	
@@ -39,7 +38,7 @@
 		<h3>Location deleted</h3>
 		<h2>{{name}}</h2>
 		<p>
-			<a href="/map/<?= $uid; ?>/" class="button">Continue</a>
+			<a href="/map/<?= $uid; ?>/list" class="button">Continue</a>
 		</p>
 	
 	</div>

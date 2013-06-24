@@ -1,29 +1,35 @@
 <?
+	include_once("class_tourist.php");
+
 	$a_route = false;
-	$uid     = false;
+	//$uid     = false;
 	$view    = false;
 	$action  = false;
-	$a_js    = array("Main");
+	$a_js    = array();
 
 	if (!$_GET["route"]) { 
-		$a_route = "home";
+		$a_route = "";
 	} else {
 		$a_route = $_GET["route"];
 	}
 	
 	$a_args     = explode("/", $a_route);
 	$controller = array_shift($a_args);
-	
+
 	switch ($controller) {
 		default:
-		case "home":
-			$view = "home.php";
+			$view = "startup.php";
+			array_push($a_js,"Startup");
 			break;
 			
+		case "home":
+			$view = "home.php";
+			array_push($a_js,"Home");
+			break;
 			
 		case "map":
 			$view   = "ticket.php";
-			$uid    = array_shift($a_args);
+			$m->uid = array_shift($a_args);
 			$action = array_shift($a_args);
 			
 			if ($action) {
@@ -31,16 +37,18 @@
 					default:break;
 					
 					case "add":
-						$view   = "add.php";
-						$a_js[] = "Add";
+						$view  = "add.php";
+						array_push($a_js,"Add");
 						break;
 						
 					case "list":
 						$view = "list.php";
-						$a_js[] = "List";
+						array_push($a_js,"List");
 						break;
 				
 				}
+			} else {
+				array_push($a_js,"Ticket");
 			}
 			
 			break;
@@ -68,11 +76,14 @@
 	<script src="/assets/js/lib/mustache.js"></script>
 	<script src="/assets/js/helpers.js"></script>
 	<script src="/assets/js/global.js"></script>
+	<script src="/assets/js/startup.js"></script>
+	<script src="/assets/js/ticket.js"></script>
 	<script src="/assets/js/main.js"></script>
 	<script src="/assets/js/add.js"></script>
 	<script src="/assets/js/list.js"></script>
+	<script src="/assets/js/home.js"></script>
 </head>
-<body id="home" data-module="<?= $jsModules; ?>" data-uid="<?= $uid; ?>">
+<body data-module="<?= $jsModules; ?>" data-uid="<?= $m->uid; ?>">
 	<? include_once($view); ?>
 </body>
 </html>
