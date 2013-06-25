@@ -1,5 +1,6 @@
 <?
 include_once("cfw.inc.php");
+include_once("Mustache.php");
 
 class tourist {
 	
@@ -95,9 +96,25 @@ class tourist {
 		
 		return($code);
 	}
+	
+	
+	function getBook($code) {
+		$a_json = array();
+		
+		if (file_exists($this->path_save.$code)) {
+			$a_json = json_decode(file_get_contents($this->path_save.$code));
+			$a_json =  (array) $a_json;
+			$a_json["locations"] = (array) $a_json["locations"];
+			$a_json["recent"] = (array) $a_json["recent"];
+		}
+		
+		return($a_json);
+	}
 }
 
 
 $m = new tourist();
+
+
 
 ?>

@@ -3,3 +3,5 @@
 */logs/!index.html
 */cache/*
 */cache/!index.html
+data/*
+assets/sass/.sass-cache/*/*

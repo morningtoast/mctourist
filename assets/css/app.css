@@ -9,161 +9,161 @@
 /* Custom */
 /* Utility */
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 [hidden] {
   display: none;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 html, button, input, select, textarea {
   font-family: sans-serif;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 body {
   margin: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 a:active, a:hover {
   outline: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h1 {
   font-size: 2em;
   margin: .67em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h2 {
   font-size: 1.5em;
   margin: .83em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h5 {
   font-size: .83em;
   margin: 1.67em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h6 {
   font-size: .67em;
   margin: 2.33em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 p, pre {
   margin: 1em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 code, kbd, pre, samp {
   font-family: monospace,serif;
   _font-family: 'courier new',monospace;
   font-size: 1em;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 q {
   quotes: none;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 small {
   font-size: 80%;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -171,66 +171,66 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 dl, menu, ol, ul {
   margin: 1em 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 menu, ol, ul {
   padding: 0 0 0 40px;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 figure {
   margin: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 form {
   margin: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: .35em .625em .75em;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 legend {
   border: 0;
   padding: 0;
@@ -238,7 +238,7 @@ legend {
   *margin-left: -7px;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -246,29 +246,29 @@ button, input, select, textarea {
   *vertical-align: middle;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 button, input {
   line-height: normal;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 button, select {
   text-transform: none;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
   *overflow: visible;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 button[disabled], html input[disabled] {
   cursor: default;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -276,7 +276,7 @@ input[type="checkbox"], input[type="radio"] {
   *width: 13px;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -284,38 +284,38 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 4, ../sass/reset.scss */
+/* line 4, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* Custom resets */
-/* line 9, ../sass/reset.scss */
+/* line 9, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 h1, h2, h3, h4, h5, h6, ul, ol, form {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 13, ../sass/reset.scss */
+/* line 13, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -326,24 +326,24 @@ input::-webkit-inner-spin-button {
   border: solid 1px #ccc;
 }
 
-/* line 15, ../sass/reset.scss */
+/* line 15, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 input, select {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 17, ../sass/reset.scss */
+/* line 17, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 21, ../sass/reset.scss */
+/* line 21, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 body {
   font-size: 1.6rem;
 }
 
-/* line 25, ../sass/reset.scss */
+/* line 25, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/reset.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -367,34 +367,34 @@ body {
 /*
 	font-family:"news cycle",arial,helvetica,sans-serif; 
 */
-/* line 7, ../sass/main.scss */
+/* line 7, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* line 12, ../sass/main.scss */
+/* line 12, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 body {
   font-family: "news cycle",arial,helvetica,sans-serif;
   background: url(../../images/dark_dotted.png);
   color: #999;
 }
 
-/* line 18, ../sass/main.scss */
+/* line 18, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 body.response {
   background: none;
   background-color: #fff;
   color: #333;
 }
 
-/* line 24, ../sass/main.scss */
+/* line 24, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout {
   max-width: 1000%;
   margin: 0px auto;
   overflow: hidden;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 30, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-ticket, #layout-switcher {
   -webkit-transition: .2s all ease;
   -moz-transition: .2s all ease;
@@ -402,7 +402,7 @@ body.response {
   width: 100%;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 37, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-ticket {
   position: relative;
   background-color: #F5F4DF;
@@ -411,47 +411,47 @@ body.response {
   margin-left: 0;
 }
 
-/* line 45, ../sass/main.scss */
+/* line 45, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 .view-switcher #layout-ticket {
   margin-left: -100%;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 51, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher {
   margin-right: -200%;
   float: left;
 }
-/* line 55, ../sass/main.scss */
+/* line 55, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher .container {
   background-color: #fff;
   text-align: center;
 }
-/* line 60, ../sass/main.scss */
+/* line 60, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher h4 {
   text-align: center;
   color: #000;
   font-size: 2rem;
 }
-/* line 66, ../sass/main.scss */
+/* line 66, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher input {
   font-size: 2.5rem;
   width: 80px;
   padding: 5px;
 }
-/* line 72, ../sass/main.scss */
+/* line 72, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher .menu {
   text-align: right;
   background-color: #6E8FBA;
   padding: 8px 25px;
   border-bottom: solid 1px #999;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-switcher .menu:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 79, ../sass/main.scss */
+/* line 79, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher .menu .close {
   position: relative;
   display: block;
@@ -466,7 +466,7 @@ body.response {
   float: right;
   color: #fff;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-switcher .menu .close:before {
   position: absolute;
   top: 50%;
@@ -481,7 +481,7 @@ body.response {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 87, ../sass/main.scss */
+/* line 87, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-switcher .location-list .action {
   position: relative;
   display: block;
@@ -495,7 +495,7 @@ body.response {
   line-height: 3.5rem;
   color: #090;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-switcher .location-list .action:before {
   position: absolute;
   top: 50%;
@@ -511,22 +511,22 @@ body.response {
   text-indent: 0;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 93, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #list-location {
   margin-top: 25px;
 }
-/* line 96, ../sass/main.scss */
+/* line 96, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #list-location ul {
   margin-bottom: 50px;
 }
-/* line 100, ../sass/main.scss */
+/* line 100, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #list-location li {
   background-color: #fff;
   text-align: left;
   border-bottom: solid 1px #999;
   position: relative;
 }
-/* line 106, ../sass/main.scss */
+/* line 106, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #list-location li a {
   display: block;
   text-decoration: none;
@@ -534,65 +534,65 @@ body.response {
   color: #000;
   font-size: 2rem;
 }
-/* line 113, ../sass/main.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #list-location li a small {
   display: block;
   color: #999;
   font-size: 1.5rem;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 127, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 .view-switcher #layout-switcher {
   margin-right: 0;
   width: 100%;
 }
 
-/* line 134, ../sass/main.scss */
+/* line 134, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 body.active .nav {
   margin-right: 0;
   width: 100%;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 135, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 body.active .main_content {
   margin-left: -100%;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 138, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header {
   background-color: #6E8FBA;
   border-bottom: solid 1px #333;
   color: #fff;
 }
-/* line 143, ../sass/main.scss */
+/* line 143, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header h1 {
   font-weight: normal;
   padding: 10px 0 20px;
   text-align: center;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-header .menu:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 153, ../sass/main.scss */
+/* line 153, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header ul {
   float: right;
   padding: 6px 15px;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-header ul:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 159, ../sass/main.scss */
+/* line 159, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header li {
   float: left;
   padding-left: 12px;
 }
-/* line 163, ../sass/main.scss */
+/* line 163, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header li .home {
   position: relative;
   display: block;
@@ -608,7 +608,7 @@ body.active .main_content {
   position: absolute;
   left: 15px;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-header li .home:before {
   position: absolute;
   top: 50%;
@@ -623,7 +623,7 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 170, ../sass/main.scss */
+/* line 170, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header li .add {
   position: relative;
   display: block;
@@ -637,7 +637,7 @@ body.active .main_content {
   line-height: 2.3rem;
   color: #fff;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-header li .add:before {
   position: absolute;
   top: 50%;
@@ -652,7 +652,7 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 175, ../sass/main.scss */
+/* line 175, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-header li .menu {
   position: relative;
   display: block;
@@ -666,7 +666,7 @@ body.active .main_content {
   line-height: 2.3rem;
   color: #fff;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-header li .menu:before {
   position: absolute;
   top: 50%;
@@ -682,41 +682,41 @@ body.active .main_content {
   text-indent: 0;
 }
 
-/* line 183, ../sass/main.scss */
+/* line 183, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper {
   margin: 20px 0;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #flipper:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 187, ../sass/main.scss */
+/* line 187, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper li {
   float: left;
   text-align: center;
 }
-/* line 192, ../sass/main.scss */
+/* line 192, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper .station {
   width: 40%;
 }
-/* line 195, ../sass/main.scss */
+/* line 195, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper .station .label {
   font-size: 1.3rem;
   color: #666;
 }
-/* line 201, ../sass/main.scss */
+/* line 201, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper .icon {
   width: 20%;
   padding-top: 15px;
 }
-/* line 206, ../sass/main.scss */
+/* line 206, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper h2 {
   font-size: 5.5rem;
   line-height: 1em;
 }
-/* line 211, ../sass/main.scss */
+/* line 211, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper .icon span {
   position: relative;
   display: block;
@@ -729,7 +729,7 @@ body.active .main_content {
   text-decoration: none;
   line-height: 5rem;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #flipper .icon span:before {
   position: absolute;
   top: 50%;
@@ -744,105 +744,105 @@ body.active .main_content {
   font-size: 5rem;
   text-indent: 0;
 }
-/* line 215, ../sass/main.scss */
+/* line 215, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper .desc {
   font-size: 2rem;
 }
-/* line 219, ../sass/main.scss */
+/* line 219, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #flipper .coords {
   font-size: 1.3rem;
   color: #999;
 }
 
-/* line 226, ../sass/main.scss */
+/* line 226, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details {
   border-top: solid 1px #999;
   border-bottom: solid 1px #999;
   margin-top: 10px;
   padding: 0 15px;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #details:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 233, ../sass/main.scss */
+/* line 233, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details li {
   float: left;
 }
-/* line 238, ../sass/main.scss */
+/* line 238, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .direction {
   width: 50%;
   border-right: solid 1px #999;
 }
-/* line 242, ../sass/main.scss */
+/* line 242, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .direction .label:before {
   font-family: "icomoon";
   content: "\e3d6";
   padding-right: 5px;
 }
-/* line 248, ../sass/main.scss */
+/* line 248, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .days {
   width: 27%;
   border-right: solid 1px #999;
   padding-left: 3%;
 }
-/* line 253, ../sass/main.scss */
+/* line 253, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .days .label:before {
   font-family: "icomoon";
   content: "\e368";
   padding-right: 5px;
 }
-/* line 259, ../sass/main.scss */
+/* line 259, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .distance {
   width: 17%;
   padding-left: 3%;
 }
-/* line 263, ../sass/main.scss */
+/* line 263, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .distance .label:before {
   font-family: "icomoon";
   content: "\e3d6";
   padding-right: 5px;
 }
-/* line 269, ../sass/main.scss */
+/* line 269, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details .label {
   font-size: 1.3rem;
   color: #666;
   padding-top: 8px;
 }
-/* line 275, ../sass/main.scss */
+/* line 275, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #details h3 {
   font-size: 2.5rem;
   line-height: 1em;
   padding-bottom: 20px;
 }
 
-/* line 283, ../sass/main.scss */
+/* line 283, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add {
   background-color: #fff;
   text-align: center;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-add:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 288, ../sass/main.scss */
+/* line 288, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add .menu {
   text-align: right;
   background-color: #6E8FBA;
   padding: 8px 25px;
   border-bottom: solid 1px #999;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-add .menu:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 295, ../sass/main.scss */
+/* line 295, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add .menu .close {
   position: relative;
   display: block;
@@ -857,7 +857,7 @@ body.active .main_content {
   float: right;
   color: #fff;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-add .menu .close:before {
   position: absolute;
   top: 50%;
@@ -872,7 +872,7 @@ body.active .main_content {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 303, ../sass/main.scss */
+/* line 303, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form {
   padding-left: 15px;
   padding-right: 15px;
@@ -880,113 +880,113 @@ body.active .main_content {
   padding-top: 10px;
   padding-bottom: 40px;
 }
-/* line 309, ../sass/main.scss */
+/* line 309, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form .row {
   padding: 8px 0;
 }
-/* line 313, ../sass/main.scss */
+/* line 313, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form input, #layout-add #add-form select {
   font-size: 2.5rem;
 }
-/* line 318, ../sass/main.scss */
+/* line 318, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form .coords input {
   width: 49%;
 }
-/* line 323, ../sass/main.scss */
+/* line 323, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form .landmark select {
   width: 100%;
 }
-/* line 327, ../sass/main.scss */
+/* line 327, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form .description input {
   width: 100%;
 }
-/* line 331, ../sass/main.scss */
+/* line 331, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-add #add-form .submit input {
   width: 100%;
 }
 
-/* line 337, ../sass/main.scss */
+/* line 337, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list {
   width: 100%;
   font-size: 2rem;
   line-height: 1em;
 }
-/* line 342, ../sass/main.scss */
+/* line 342, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list tr {
   padding: 5px 0;
 }
-/* line 345, ../sass/main.scss */
+/* line 345, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list tr.rowtop td {
   border-top: solid 4px #000;
 }
-/* line 349, ../sass/main.scss */
+/* line 349, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list tr.rowbottom td {
   color: #999;
   padding: 10px 5px;
 }
-/* line 353, ../sass/main.scss */
+/* line 353, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list tr.rowbottom td .landmark {
   width: 70%;
 }
-/* line 354, ../sass/main.scss */
+/* line 354, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list tr.rowbottom td .coord {
   width: 15%;
 }
-/* line 358, ../sass/main.scss */
+/* line 358, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list td {
   line-height: 1em;
   color: #333;
   padding: 3px 5px;
 }
-/* line 364, ../sass/main.scss */
+/* line 364, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list .bottom {
   border-bottom: solid 1px #999;
 }
-/* line 368, ../sass/main.scss */
+/* line 368, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list .icon {
   border-left: solid 1px #999;
 }
-/* line 372, ../sass/main.scss */
+/* line 372, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list .name {
   text-align: left;
   font-size: 2.5rem;
   padding: 8px 3px;
 }
-/* line 378, ../sass/main.scss */
+/* line 378, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list .label {
   font-size: 1.3rem;
   color: #999;
   line-height: 1em;
 }
-/* line 384, ../sass/main.scss */
+/* line 384, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 table.location-list .coord {
   text-align: right;
 }
 
-/* line 389, ../sass/main.scss */
+/* line 389, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-list {
   background-color: #fff;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-list:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 393, ../sass/main.scss */
+/* line 393, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-list .menu {
   text-align: right;
   background-color: #6E8FBA;
   padding: 8px 25px;
   border-bottom: solid 1px #999;
 }
-/* line 113, ../sass/_vars.scss */
+/* line 113, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-list .menu:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 400, ../sass/main.scss */
+/* line 400, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-list .menu .close {
   position: relative;
   display: block;
@@ -1001,7 +1001,7 @@ table.location-list .coord {
   float: right;
   color: #fff;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-list .menu .close:before {
   position: absolute;
   top: 50%;
@@ -1016,7 +1016,7 @@ table.location-list .coord {
   font-size: 2.3rem;
   text-indent: 0;
 }
-/* line 408, ../sass/main.scss */
+/* line 408, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/main.scss */
 #layout-list .location-list .action {
   position: relative;
   display: block;
@@ -1030,7 +1030,7 @@ table.location-list .coord {
   line-height: 3.5rem;
   color: #900;
 }
-/* line 46, ../sass/_vars.scss */
+/* line 46, C:/www/xampplite/htdocs/projects/mctourist/assets/sass/_vars.scss */
 #layout-list .location-list .action:before {
   position: absolute;
   top: 50%;

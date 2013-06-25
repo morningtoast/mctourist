@@ -85,5 +85,8 @@
 </head>
 <body data-module="<?= $jsModules; ?>" data-uid="<?= $m->uid; ?>">
 	<? include_once($view); ?>
+	<script type="test/js-template" id="tmpl-listrow">
+	<? include_once("_listrow.php"); ?>
+	</script>
 </body>
 </html>

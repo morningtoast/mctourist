@@ -29,11 +29,6 @@ App.Ticket = (function($, Modernizr, App) {
 				url:App.Global.data.saveto,
 				dataType: "json",
 				success: function(response) {
-					$.each(response.locations, function(k,v) {
-						//$("#locations").append(_templates.render("#tmpl-list-row",v));	
-						//data.coords[v.id] = v;
-					});
-					
 					var fromPointId = response.recent.from;
 					var destPointId = response.recent.to;
 					
@@ -196,7 +191,9 @@ App.Ticket = (function($, Modernizr, App) {
 		
 		
 		changeWaypoint: function() {
-			$("#flipper .station").on("click", function() {
+			$("#layout-content").on("click", "#flipper .station", function() {
+				var way = $(this).data("label");
+				$(".wayto-label").html(way);
 				$("#layout").toggleClass("view-switcher");
 				//local.toggleScroll();
 			});		
