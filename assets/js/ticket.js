@@ -29,6 +29,14 @@ App.Ticket = (function($, Modernizr, App) {
 				url:App.Global.data.saveto,
 				dataType: "json",
 				success: function(response) {
+					data.destination = response;
+					local.newTicket(response);
+				}
+			});		
+		
+		},
+		
+		newTicket: function(response) {
 					var fromPointId = response.recent.from;
 					var destPointId = response.recent.to;
 					
@@ -55,10 +63,7 @@ App.Ticket = (function($, Modernizr, App) {
 						"distance":distance
 					}
 					
-					$("#layout-content").html(_templates.render("#tmpl-ticket",viewdata));
-					
-				}
-			});		
+					$("#layout-content").html(_templates.render("#tmpl-ticket",viewdata));		
 		
 		},
 		
@@ -110,10 +115,10 @@ App.Ticket = (function($, Modernizr, App) {
 		
 		getDayTime: function(dist) {
 			var days    = 1;
-			var halfDay = Math.floor(data.distPerDay / 2);
+			var halfDay = Math.floor(App.Global.data.distPerDay / 2);
 		
 			if (dist >= App.Global.data.distPerDay) {
-				days = Math.floor(dist / App.Global.data.distPerDay);
+				days = Math.round((dist / App.Global.data.distPerDay) * 10) / 10;
 			} else {
 				if (dist < halfDay) {
 					days = "< 1";
@@ -123,15 +128,37 @@ App.Ticket = (function($, Modernizr, App) {
 			return(days);
 		},
 		
+		setCustom: function() {
+			// "id":1372124400,"x":482,"z":65,"name":"Example spot #2","landmark":"Village","port":"EX2"}}
+			var d      = new Date();
+			var tempId = d.getTime();
+			var zpos   = $("#customz").val();
+			var waypoint = $("#set-custom").data("waypoint");
+			
+			data.destination.locations[tempId] = {
+				"id": tempId,
+				"x": $("#customx").val(),
+				"z": zpos,
+				"rz": (0 - zpos),
+				"landmark":"Custom",
+				"port":"YOU",
+				"name":"Custom coordinate"
+			}
+			
+			$("#customx").val("");
+			$("#customz").val("");
+			
+			data.destination.recent[waypoint] = tempId;
+			
+			local.newTicket(data.destination);
+			
+			$("#layout").toggleClass("view-switcher");
+		},
+		
 		locatePlayer: function() {
 			data.destination = false;
 		
-			var zpos = $("#locatez").val();
-			data.player = {
-				x: $("#locatex").val(),
-				z: zpos,
-				rz: (0 - zpos)
-			}
+
 			
 			console.log(data.player);
 			
@@ -170,7 +197,7 @@ App.Ticket = (function($, Modernizr, App) {
 	// Module bindings
 	var bind = {
 		init: function() {
-			console.log("bind.init");
+			console.log("ticket.bind.init");
 			this.logout();
 			this.changeWaypoint();
 			this.submitLocate();
@@ -192,8 +219,11 @@ App.Ticket = (function($, Modernizr, App) {
 		
 		changeWaypoint: function() {
 			$("#layout-content").on("click", "#flipper .station", function() {
-				var way = $(this).data("label");
+				var way      = $(this).data("label");
+				var waypoint = $(this).data("waypoint");
+				
 				$(".wayto-label").html(way);
+				$("#set-custom").data("waypoint", waypoint);
 				$("#layout").toggleClass("view-switcher");
 				//local.toggleScroll();
 			});		
@@ -207,17 +237,27 @@ App.Ticket = (function($, Modernizr, App) {
 		},
 		
 		submitLocate: function() {
-			$("#submit_locateplayer").on("click", function(e) {
+			$("#layout-switcher").on("click", "#set-custom", function(e) {
 				e.preventDefault();
 				
-				
-				local.locatePlayer();
-				
+				local.setCustom();
 			});
 		},
 
 		viewDestination: function() {
-			$("#locations").on("click", "td .view", function(e) {
+			$("#layout-switcher").on("click", ".action", function(e) {
+				e.preventDefault();
+				var destId   = $(this).data("id");
+				var waypoint = $("#set-custom").data("waypoint");
+				
+				data.destination.recent[waypoint] = destId;
+				
+				local.newTicket(data.destination);
+			
+				$("#layout").toggleClass("view-switcher");
+			
+				/*
+			
 				var dest = $(this).parent().parent().data();
 				dest.rz = (0 - dest.z);
 				data.destination = dest;
@@ -254,6 +294,7 @@ App.Ticket = (function($, Modernizr, App) {
 				} else {
 					alert("TBD");
 				}
+				*/
 				
 			});
 		}

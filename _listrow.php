@@ -6,7 +6,7 @@
 				<div class="name">{{name}}</div>
 			</td>
 			<td rowspan="2" class="icon">
-				<a href="#" data-id="{{id}}" class="action">##</a>
+				<a href="#action" data-id="{{id}}" class="action">##</a>
 			</td>
 		</tr>
 		<tr class="rowbottom">
